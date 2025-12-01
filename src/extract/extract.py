@@ -1,6 +1,5 @@
 import requests
 from src.utils.logger import get_logger
-from src.utils.config import COINS, CURRENCIES, DEFAULT_DAYS
 
 logger = get_logger(__name__)
 
@@ -13,29 +12,42 @@ def extract_crypto_prices(coins: list[str], currencies: list[str]) -> dict:
 
     Args:
         coins (list[str]): list of coin dicts from config
-        currencies (list[str]): fiat currencies like ["gbp", "usd"]
+        currencies (list[str]): list of fiat currencies e.g. ["gbp", "usd"]
 
     Returns:
         dict: API response containing price data for each coin
     """
 
-    coin_ids = ",".join([coin["id"] for coin in COINS])
-    url = "https://api.coingecko.com/api/v3/simple/price"
+    coin_ids = ",".join([coin["id"] for coin in coins])
+    vs_currencies = ",".join(currencies)
 
     params = {
-        "ids": "coin_ids",
+        "ids": coin_ids,
         "vs_currencies": vs_currencies,
         "include_market_cap": "true",
         "include_24hr_vol": "true",
         "include_24hr_change": "true"
     }
 
+    logger.info("Starting extraction for coins: {coin_ids}")
+
     try:
         response = requests.get(API_URL, params=params, timeout=10)
         response.raise_for_status()
-        data = response.json
-        logger.info("Extraction successful - received data for %d coins", len(data))
-        return data
-    except requests.exceptions.RequestException as e:
-        logger.error("Extraction failed %s", e)
+    except requests.exceptions.RequestsException as e:
+        logger.error(f"APi request failed: {e}")
         raise
+
+    try:
+        data = response.json()
+    except ValueError as e:
+        logger.error(f"Failed to decode JSON: {e}")
+        return data
+
+    if not isinstance(data, dict):
+        logger.error(f"Unexpected response type: {type(data)}")
+        raise ValueError
+
+    logger.info(f"Extraction successful - received data for {len(data)} coins")
+
+    return data
