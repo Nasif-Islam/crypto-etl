@@ -23,6 +23,10 @@ def extract_crypto_prices(coins: list[dict], currencies: list[str]) -> dict:
     coin_ids = ",".join([coin["id"] for coin in coins])
     vs_currencies = ",".join(currencies)
 
+    logger.info("Preparing API request...")
+    logger.info(f"Coins requested: {coin_ids}")
+    logger.info(f"Currencies requested: {vs_currencies}")
+
     params = {
         "ids": coin_ids,
         "vs_currencies": vs_currencies,
@@ -31,15 +35,33 @@ def extract_crypto_prices(coins: list[dict], currencies: list[str]) -> dict:
         "include_24hr_change": "true"
     }
 
-    logger.info(f"Starting extraction for coins: {coin_ids}")
-
+    logger.info("Sending request to CoinGecko API...")
     try:
         response = requests.get(API_URL, params=params, timeout=10)
         response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        logger.error(f"API request failed: {e}")
+    except requests.exceptions.Timeout:
+        logger.error("API request timed out after 10 seconds.")
         raise
+    except requests.exceptions.ConnectionError:
+        logger.error("Connection error — check your network or API status.")
+        raise
+    except requests.exceptions.HTTPError as e:
+        status = response.status_code
+        logger.error(f"HTTP error {status}: {response.reason} - {e}")
+        if status == 429:
+            logger.error("Rate limit hit — CoinGecko API throttled the request.")
+        elif status == 404:
+            logger.error("Endpoint not found — check API URL.")
+        elif 500 <= status < 600:
+            logger.error("Server error on CoinGecko’s side.")
+        raise
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Unexpected request exception occurred: {e}")
+        raise
+    else:
+        logger.info("API request successful.")
 
+    logger.info("Decoding JSON response...")
     try:
         data = response.json()
     except ValueError as e:
