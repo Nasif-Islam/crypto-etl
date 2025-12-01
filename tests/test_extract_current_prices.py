@@ -32,7 +32,7 @@ def test_expected_coins_present(mock_get):
         "ethereum": {"gbp": 100},
         "solana": {"gbp": 100},
         "binancecoin": {"gbp": 100},
-        "ripple": {"gbp": 100}
+        "ripple": {"gbp": 100},
     }
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
