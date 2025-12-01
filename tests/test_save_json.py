@@ -4,14 +4,15 @@ from src.utils.save_json import save_raw_json
 
 def test_save_json_creates_file(tmp_path, monkeypatch):
     """
-    Ensure save_raw_json() creates a file in the expected location.
+    Ensure save_raw_json() creates a file in the expected location
 
     tmp_path:
         Temporary directory created by pytest for isolation.
-        Deleted automatically after the test.
+        Deleted automatically after the test
 
     monkeypatch:
-        Temporarily overrides RAW_DIR so the test does NOT write to the real project.
+        Temporarily overrides RAW_DIR so the test does NOT write to the real
+        project
     """
 
     # Redirect RAW_DIR → temporary folder
@@ -28,7 +29,7 @@ def test_save_json_creates_file(tmp_path, monkeypatch):
 
 def test_save_json_writes_correct_content(tmp_path, monkeypatch):
     """
-    Verify that the JSON saved to disk matches the input data exactly.
+    Verify that the JSON saved to disk matches the input data exactly
     """
 
     monkeypatch.setattr("src.utils.save_json.RAW_DIR", tmp_path)
@@ -46,7 +47,7 @@ def test_save_json_writes_correct_content(tmp_path, monkeypatch):
 
 def test_save_json_overwrites_existing_file(tmp_path, monkeypatch):
     """
-    Ensure saving again using the same filename overwrites older content.
+    Ensure saving again using the same filename overwrites older content
     """
 
     monkeypatch.setattr("src.utils.save_json.RAW_DIR", tmp_path)
