@@ -3,10 +3,12 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ETL-Capstone"
+name = "crypto-etl"
 version = "0.1.0"
-description = "An ETL pipeline for extracting, transforming and loading UFC fighter data"
-authors = [{name = "Nasif Islam"]
+description = "An ETL pipeline for extracting, transforming, and loading cryptocurrency price data"
+authors = [
+    { name = "Nasif Islam" }
+]
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
@@ -17,45 +19,15 @@ classifiers = [
 dynamic = ["dependencies"]
 
 [project.urls]
-Homepage = "[build-system]
-requires = ["setuptools>=45", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "ETL-Capstone"
-version = "0.1.0"
-description = "An ETL project for extracting, transforming, and loading data with Streamlit Integration"
-authors = [{name = "Nasif Islam"]
-readme = "README.md"
-requires-python = ">=3.12"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
-dynamic = ["dependencies"]
-
-[project.urls]
-Homepage = "https://github.com/de-2506-a/etl-walkthrough"
+Homepage = "https://github.com/Nasif-Islam/crypto-etl"
 
 [project.scripts]
-run_app = "scripts/run_app:main"
-run_tests = "tests/run_tests:main"
+run_app = "scripts.run_app:main"
+run_tests = "tests.run_tests:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 include = ["*"]
 
 [tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}"
-
-[project.scripts]
-run_app = "scripts/run_app:main"
-run_tests = "tests/run_tests:main"
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["*"]
-
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+dependencies = { file = ["requirements.txt"] }
