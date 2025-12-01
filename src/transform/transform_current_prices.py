@@ -1,15 +1,28 @@
+import pandas as pd
 from datetime import datetime, timezone
 from src.utils.logger import get_logger
+from src.utils.timer import timer
 
 logger = get_logger(__name__)
 
+STANDARD_COLUMNS = [
+    "timestamp",
+    "coin_id",
+    "coin_name",
+    "currency",
+    "price",
+    "market_cap",
+    "volume_24h",
+    "change_24h",
+]
 
+
+@timer("Transform Current Prices")
 def transform_current_prices(
     raw_data: dict, coins: list[dict], currencies: list[str]
-) -> list[dict]:
+) -> pd.DataFrame:
     """
-    Transform the nested API structure of current price data into a list of
-    dictionaries suitable for analysis
+    Clean, validate, and standardize cryptocurrency price data using Pandas.
 
     Args:
         raw_data (dict): API response from extract step
@@ -17,17 +30,17 @@ def transform_current_prices(
         currencies (list[str]): list of currencies from config
 
     Returns:
-        list[dict]: Cleaned and flattened list of price records
+        pd.DataFrame: Cleaned, validated, flattened DataFrame of price records
     """
 
     logger.info("Starting transformation of current price data...")
     logger.info(
-        f"Transforming data for {len(coins)} coins and {len(currencies)} currencies."
+        f"Transforming data for {len(coins)} coins and {len(currencies)} currencies"
     )
 
-    transformed = []
+    logger.info("Flattening raw JSON into tabular rows")
+    rows = []
     timestamp = datetime.now(timezone.utc).isoformat()
-
     # Maps coin id to coin name - constant time lookup
     coin_lookup = {coin["id"]: coin["name"] for coin in coins}
 
@@ -38,36 +51,64 @@ def transform_current_prices(
             )
 
         for currency in currencies:
-            price = values.get(currency)
-            market_cap = values.get(f"{currency}_market_cap")
-            volume_24h = values.get(f"{currency}_24h_vol")
-            change_24h = values.get(f"{currency}_24h_change")
+            rows.append(
+                {
+                    "timestamp": timestamp,
+                    "coin_id": coin_id,
+                    "coin_name": coin_lookup.get(
+                        coin_id, coin_id.capitalize()
+                    ),
+                    "currency": currency,
+                    "price": values.get(currency),
+                    "market_cap": values.get(f"{currency}_market_cap"),
+                    "volume_24h": values.get(f"{currency}_24h_vol"),
+                    "change_24h": values.get(f"{currency}_24h_change"),
+                }
+            )
 
-            if price is None:
-                logger.warning(f"Missing price for {coin_id} in {currency}")
+    df = pd.DataFrame(rows)
+    logger.info(f"Initial DataFrame created with {len(df)} rows")
 
-            if market_cap is None:
-                logger.debug(f"No market cap data for {coin_id} in {currency}")
+    df.columns = [col.lower().strip() for col in df.columns]
+    df = df[STANDARD_COLUMNS]
 
-            if volume_24h is None:
-                logger.debug(f"No 24h volume data for {coin_id} in {currency}")
+    numeric_cols = ["price", "market_cap", "volume_24h", "change_24h"]
+    df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric, errors="coerce")
 
-            if change_24h is None:
-                logger.debug(f"No 24h % change for {coin_id} in {currency}")
+    missing_price_rows = df["price"].isna().sum()
+    if missing_price_rows > 0:
+        logger.warning(
+            f"Dropping {missing_price_rows} rows with missing PRICE (required field)"
+        )
+        df = df.dropna(subset=["price"])
 
-            record = {
-                "coin_id": coin_id,
-                "coin_name": coin_lookup.get(coin_id, coin_id.capitalize()),
-                "currency": currency,
-                "price": price,
-                "market_cap": market_cap,
-                "volume_24h": volume_24h,
-                "change_24h": change_24h,
-                "timestamp": timestamp,
-            }
+    df["market_cap"] = df["market_cap"].fillna(0)
+    df["volume_24h"] = df["volume_24h"].fillna(0)
+    df["change_24h"] = df["change_24h"].fillna(0)
 
-            transformed.append(record)
+    before = len(df)
+    df = df.drop_duplicates()
+    removed = before - len(df)
+    if removed > 0:
+        logger.info(f"Removed {removed} duplicate rows")
 
-    logger.info(f"Transformation complete - produced {len(transformed)} rows.")
+    if df["price"].lt(0).any():
+        logger.warning("Negative prices detected — investigate API response")
 
-    return transformed
+    if df["market_cap"].lt(0).any():
+        logger.warning(
+            "Negative market caps detected — investigate API response"
+        )
+
+    if df["volume_24h"].lt(0).any():
+        logger.warning(
+            "Negative 24h volume detected — investigate API response"
+        )
+
+    df = df.sort_values(["coin_id", "currency"]).reset_index(drop=True)
+
+    logger.info(
+        f"Transformation complete. Final dataset contains {len(df)} rows"
+    )
+
+    return df
