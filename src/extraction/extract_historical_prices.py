@@ -1,5 +1,7 @@
 import json
 import requests
+import time
+import random
 from src.utils.logger import get_logger
 from src.utils.timer import timer
 from src.utils.config import RAW_DIR
@@ -37,6 +39,8 @@ def extract_historical_ohlc(
 
             for currency in currencies:
                 logger.info(f"Fetching OHLC for {coin_id} in {currency}")
+
+                time.sleep(random.uniform(1.5, 3.0))  # Prevents rate limiting
 
                 url = HISTORICAL_API.format(
                     coin=coin_id, currency=currency, days=days
