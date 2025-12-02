@@ -1,7 +1,9 @@
-import pytest
-from unittest.mock import patch, MagicMock
-from src.extraction.extract_current_prices import extract_crypto_prices
-from src.utils.config import COINS, CURRENCIES
+import pytest  # noqa: F401
+import json
+from unittest.mock import patch, MagicMock, mock_open
+from src.extraction.extract_current_prices import extract_current_prices
+from src.utils.config import COINS
+from requests.exceptions import HTTPError
 
 
 @patch("requests.get")
@@ -16,7 +18,7 @@ def test_returns_dict(mock_get):
     }
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
-    data = extract_crypto_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
+    data = extract_current_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
     assert isinstance(data, dict)
 
 
@@ -36,7 +38,7 @@ def test_expected_coins_present(mock_get):
     }
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
-    data = extract_crypto_prices(COINS, ["gbp"])
+    data = extract_current_prices(COINS, ["gbp"])
     ids = [coin["id"] for coin in COINS]
     for coin_id in ids:
         assert coin_id in data
@@ -53,7 +55,7 @@ def test_currencies_present(mock_get):
     }
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
-    data = extract_crypto_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
+    data = extract_current_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
     for currency in ["gbp", "usd", "eur"]:
         assert currency in data["bitcoin"]
 
@@ -69,7 +71,7 @@ def test_values_are_numeric(mock_get):
     }
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
-    data = extract_crypto_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
+    data = extract_current_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
     for currency in ["gbp", "usd", "eur"]:
         assert isinstance(data["bitcoin"][currency], (int, float))
 
@@ -87,33 +89,45 @@ def test_api_mock(mock_get):
     mock_response.status_code = 200
     mock_response.raise_for_status.return_value = None
     mock_get.return_value = mock_response
-    data = extract_crypto_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
+    data = extract_current_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
     assert "bitcoin" in data
     assert data["bitcoin"]["usd"] == 120
 
 
 @patch("requests.get")
-def test_api_http_error(mock_get):
-    """
-    Tests that the extractor correctly raises an exception when the
-    API returns an HTTP error (e.g. 404, 500, 429)
-    """
+def test_api_http_error_uses_backup(mock_get):
     mock_response = MagicMock()
-    mock_response.raise_for_status.side_effect = Exception("HTTP Error")
+    mock_response.raise_for_status.side_effect = HTTPError("HTTP Error")
+
+    mock_response.status_code = 500
+    mock_response.reason = "Server Error"
+
     mock_get.return_value = mock_response
-    with pytest.raises(Exception):
-        extract_crypto_prices([{"id": "bitcoin"}], ["gbp"])
+
+    fake_backup = {"bitcoin": {"gbp": 999}}
+
+    with patch("pathlib.Path.exists", return_value=True):
+        with patch(
+            "builtins.open", mock_open(read_data=json.dumps(fake_backup))
+        ):
+            data = extract_current_prices([{"id": "bitcoin"}], ["gbp"])
+
+    assert data == fake_backup
 
 
 @patch("requests.get")
-def test_json_decode_error(mock_get):
-    """
-    Tests extractor's behaviour when the API returns invalid JSON
-    (e.g. corrupted response, empty response)
-    """
+def test_json_decode_error_uses_backup(mock_get):
     mock_response = MagicMock()
     mock_response.raise_for_status.return_value = None
     mock_response.json.side_effect = ValueError("json error")
     mock_get.return_value = mock_response
-    with pytest.raises(ValueError):
-        extract_crypto_prices([{"id": "bitcoin"}], ["gbp"])
+
+    fake_backup = {"bitcoin": {"gbp": 200}}
+
+    with patch("pathlib.Path.exists", return_value=True):
+        with patch(
+            "builtins.open", mock_open(read_data=json.dumps(fake_backup))
+        ):
+            data = extract_current_prices([{"id": "bitcoin"}], ["gbp"])
+
+    assert data == fake_backup
