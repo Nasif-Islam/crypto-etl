@@ -1,5 +1,5 @@
 import pandas as pd
-import pytest
+import pytest  # noqa: F401
 from src.transform.transform_current_prices import transform_current_prices
 
 # Sample input for testing
@@ -79,6 +79,7 @@ def test_values_correctly_assigned():
 def test_timestamp_exists():
     df = transform_current_prices(MOCK_RAW_DATA, MOCK_COINS, MOCK_CURRENCIES)
     assert df["timestamp"].notna().all()
+    assert isinstance(df["timestamp"].iloc[0], pd.Timestamp)
 
 
 def test_missing_prices_are_dropped():

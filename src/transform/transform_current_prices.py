@@ -1,5 +1,4 @@
 import pandas as pd
-from datetime import datetime, timezone
 from src.utils.logger import get_logger
 from src.utils.timer import timer
 
@@ -41,7 +40,7 @@ def transform_current_prices(
 
     logger.info("Flattening raw JSON into tabular rows")
     rows = []
-    timestamp = datetime.now(timezone.utc).isoformat()
+    timestamp = pd.Timestamp.now(tz="UTC")
     # Maps coin id to coin name - constant time lookup
     coin_lookup = {coin["id"]: coin["name"] for coin in coins}
 

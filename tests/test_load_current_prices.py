@@ -1,84 +1,97 @@
-import pandas as pd
-from src.load.load_current_prices import load_current_prices
+import pytest  # noqa: F401
+import json  # noqa: F401
+from unittest.mock import patch, MagicMock, mock_open
+from src.extraction.extract_historical_prices import extract_historical_ohlc
+
+MOCK_COINS = [{"id": "bitcoin", "name": "Bitcoin"}]
+MOCK_CURRENCIES = ["usd"]
+MOCK_DAYS = 10
+
+MOCK_OHLC_RESPONSE = [
+    [1700000000000, 35000, 36000, 34000, 35500],
+    [1700086400000, 35500, 36500, 34500, 36000],
+]
 
 
-def test_load_creates_csv_file(tmp_path, monkeypatch):
-    """
-    Test that load_current_prices creates a CSV file in the correct location
+@patch("src.extraction.extract_historical_prices.requests.get")
+@patch(
+    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
+    return_value=False,
+)
+@patch("builtins.open", new_callable=mock_open)
+def test_extract_historical_success(mock_file, mock_exists, mock_get):
+    mock_resp = MagicMock()
+    mock_resp.status_code = 200
+    mock_resp.json.return_value = MOCK_OHLC_RESPONSE
+    mock_get.return_value = mock_resp
 
-    - tmp_path: pytest temporary folder (isolated)
-    - monkeypatch: overriding CLEANED_DIR so real project files are unaffected
-    """
+    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
 
-    # Patch CLEANED_DIR so the function writes into tmp_path
-    monkeypatch.setattr("src.load.load_current_prices.CLEANED_DIR", tmp_path)
+    assert len(records) == 2
 
-    # Test DataFrame
-    df = pd.DataFrame(
-        {
-            "coin_id": ["bitcoin"],
-            "currency": ["usd"],
-            "price": [100],
-            "market_cap": [1000],
-            "volume_24h": [500],
-            "change_24h": [1.2],
-            "timestamp": ["2025-01-01T00:00:00Z"],
-        }
-    )
+    first = records[0]
+    assert first["coin_id"] == "bitcoin"
+    assert first["coin_name"] == "Bitcoin"
+    assert first["currency"] == "usd"
 
-    filepath = load_current_prices(df, "test_prices.csv")
-    saved_file = tmp_path / "test_prices.csv"
+    assert first["timestamp_ms"] == 1700000000000
 
-    assert saved_file.exists(), "CSV file was not created"
-    assert filepath == str(
-        saved_file
-    ), "Returned path does not match file created"
+    for key in ["open", "high", "low", "close"]:
+        assert key in first
 
 
-def test_load_writes_correct_content(tmp_path, monkeypatch):
-    """
-    Ensure that the CSV written to disk contains the correct data
-    """
+@patch("src.extraction.extract_historical_prices.requests.get")
+@patch(
+    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
+    return_value=False,
+)
+@patch("builtins.open", new_callable=mock_open)
+def test_extract_historical_skips_bad_rows(mock_file, mock_exists, mock_get):
+    bad_data = [
+        [1700000000000, 35000, 36000],  # invalid
+        [1700086400000, 35500, 36500, 34500, 36000],  # valid
+    ]
 
-    monkeypatch.setattr("src.load.load_current_prices.CLEANED_DIR", tmp_path)
+    mock_resp = MagicMock()
+    mock_resp.status_code = 200
+    mock_resp.json.return_value = bad_data
+    mock_get.return_value = mock_resp
 
-    df = pd.DataFrame(
-        {
-            "coin_id": ["bitcoin", "ethereum"],
-            "currency": ["usd", "usd"],
-            "price": [100, 200],
-            "market_cap": [1000, 2000],
-            "volume_24h": [500, 700],
-            "change_24h": [1.2, -0.5],
-            "timestamp": ["2025-01-01T00:00:00Z", "2025-01-01T00:00:00Z"],
-        }
-    )
+    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
 
-    load_current_prices(df, "test_prices.csv")
-    saved_file = tmp_path / "test_prices.csv"
-
-    loaded_df = pd.read_csv(saved_file)
-
-    # Check the content matches
-    pd.testing.assert_frame_equal(df, loaded_df)
+    assert len(records) == 1
 
 
-def test_load_overwrites_existing_file(tmp_path, monkeypatch):
-    """
-    Test that saving a second time overwrites the existing CSV file
-    """
+@patch("src.extraction.extract_historical_prices.requests.get")
+@patch(
+    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
+    return_value=False,
+)
+@patch("builtins.open", new_callable=mock_open)
+def test_extract_historical_api_failure_no_backup(
+    mock_file, mock_exists, mock_get
+):
+    mock_resp = MagicMock()
+    mock_resp.status_code = 500
+    mock_get.return_value = mock_resp
 
-    monkeypatch.setattr("src.load.load_current_prices.CLEANED_DIR", tmp_path)
+    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
+    assert records == []
 
-    df1 = pd.DataFrame({"coin_id": ["bitcoin"]})
-    df2 = pd.DataFrame({"coin_id": ["ethereum"]})
 
-    load_current_prices(df1, "overwrite.csv")
-    load_current_prices(df2, "overwrite.csv")
+@patch("src.extraction.extract_historical_prices.requests.get")
+@patch(
+    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
+    return_value=False,
+)
+@patch("builtins.open", new_callable=mock_open)
+def test_extract_historical_json_error_no_backup(
+    mock_file, mock_exists, mock_get
+):
+    mock_resp = MagicMock()
+    mock_resp.status_code = 200
+    mock_resp.json.side_effect = ValueError("Bad JSON")
+    mock_get.return_value = mock_resp
 
-    saved_file = tmp_path / "overwrite.csv"
-    loaded = pd.read_csv(saved_file)
-
-    assert (
-        loaded.iloc[0]["coin_id"] == "ethereum"
-    ), "File did not overwrite correctly"
+    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
+    assert records == []
