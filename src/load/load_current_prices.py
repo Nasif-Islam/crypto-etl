@@ -7,7 +7,7 @@ from src.utils.timer import timer
 logger = get_logger(__name__)
 
 
-@timer("Load Current Prices")
+@timer("Load Current Crypto Prices")
 def load_current_prices(
     df: pd.DataFrame, filename: str = "current_crypto_prices.csv"
 ) -> str:

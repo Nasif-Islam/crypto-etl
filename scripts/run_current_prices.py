@@ -1,4 +1,4 @@
-from src.extraction.extract_current_prices import extract_crypto_prices
+from src.extraction.extract_current_prices import extract_current_prices
 from src.transform.transform_current_prices import transform_current_prices
 from src.utils.config import COINS, CURRENCIES
 
@@ -7,7 +7,7 @@ def main():
     print("\nRunning Extract + Transform test...\n")
 
     # 1. Extract
-    raw_data = extract_crypto_prices(COINS, CURRENCIES)
+    raw_data = extract_current_prices(COINS, CURRENCIES)
     print("--- RAW DATA SAMPLE ---")
     first_coin = list(raw_data.keys())[0]
     print(first_coin, ":", raw_data[first_coin])

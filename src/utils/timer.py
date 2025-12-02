@@ -9,6 +9,7 @@ def timer(step_name: str):
     """
     Decorator function that calculates time taken for a function to execute
     """
+
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -20,7 +21,11 @@ def timer(step_name: str):
             end = time.time()
             duration = round(end - start, 3)
 
-            logger.info(f"===== Completed {step_name} in {duration} seconds =====\n")
+            logger.info(
+                f"===== Completed {step_name} in {duration} seconds" f"=====\n"
+            )
             return result
+
         return wrapper
+
     return decorator

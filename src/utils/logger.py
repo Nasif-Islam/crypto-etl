@@ -6,7 +6,7 @@ from src.utils.config import LOG_DIR
 def get_logger(name: str) -> logging.Logger:
     """
     Creates and returns a logger instance for any module
-    Logs are written to both console and log file.
+    Logs are written to both console and log file
 
     Args:
         name (str): the module name using the logger

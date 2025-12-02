@@ -7,10 +7,10 @@ logger = get_logger(__name__)
 API_URL = "https://api.coingecko.com/api/v3/simple/price"
 
 
-@timer("Crypto Price Extraction")
-def extract_crypto_prices(coins: list[dict], currencies: list[str]) -> dict:
+@timer("Current Crypto Price Extraction")
+def extract_current_prices(coins: list[dict], currencies: list[str]) -> dict:
     """
-    Extract crypto pries from CoinGecko.
+    Extract crypto prices from CoinGecko
 
     Args:
         coins (list[dict]): list of coin dicts from config
@@ -32,7 +32,7 @@ def extract_crypto_prices(coins: list[dict], currencies: list[str]) -> dict:
         "vs_currencies": vs_currencies,
         "include_market_cap": "true",
         "include_24hr_vol": "true",
-        "include_24hr_change": "true"
+        "include_24hr_change": "true",
     }
 
     logger.info("Sending request to CoinGecko API...")
@@ -49,7 +49,9 @@ def extract_crypto_prices(coins: list[dict], currencies: list[str]) -> dict:
         status = response.status_code
         logger.error(f"HTTP error {status}: {response.reason} - {e}")
         if status == 429:
-            logger.error("Rate limit hit — CoinGecko API throttled the request.")
+            logger.error(
+                "Rate limit hit — CoinGecko API throttled the request."
+            )
         elif status == 404:
             logger.error("Endpoint not found — check API URL.")
         elif 500 <= status < 600:

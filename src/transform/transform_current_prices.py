@@ -17,7 +17,7 @@ STANDARD_COLUMNS = [
 ]
 
 
-@timer("Transform Current Prices")
+@timer("Transform Current Crypto Prices")
 def transform_current_prices(
     raw_data: dict, coins: list[dict], currencies: list[str]
 ) -> pd.DataFrame:
@@ -35,7 +35,8 @@ def transform_current_prices(
 
     logger.info("Starting transformation of current price data...")
     logger.info(
-        f"Transforming data for {len(coins)} coins and {len(currencies)} currencies"
+        f"Transforming data for {len(coins)} coins "
+        f"and {len(currencies)} currencies"
     )
 
     logger.info("Flattening raw JSON into tabular rows")
@@ -78,7 +79,8 @@ def transform_current_prices(
     missing_price_rows = df["price"].isna().sum()
     if missing_price_rows > 0:
         logger.warning(
-            f"Dropping {missing_price_rows} rows with missing PRICE (required field)"
+            f"Dropping {missing_price_rows} rows with missing PRICE"
+            f"(required field)"
         )
         df = df.dropna(subset=["price"])
 

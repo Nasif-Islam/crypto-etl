@@ -16,5 +16,5 @@ DEFAULT_DAYS = 365
 
 RAW_DIR = BASE_DIR / "data" / "raw"
 CLEANED_DIR = BASE_DIR / "data" / "cleaned"
-HASH_DIR = BASE_DIR / "data" / "hashes"
+HASH_DIR = BASE_DIR / "data" / "hashes"  # todo - add hashing for files
 LOG_DIR = BASE_DIR / "logs"
