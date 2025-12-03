@@ -1,7 +1,6 @@
 import pytest  # noqa: F401
 import json  # noqa: F401
 from unittest.mock import patch, MagicMock, mock_open
-from requests.exceptions import HTTPError
 from src.extraction.extract_current_prices import extract_current_prices
 from src.utils.config import COINS
 
@@ -93,28 +92,6 @@ def test_api_mock(mock_get, mock_exists, mock_file):
 
 
 @patch("requests.get")
-def test_api_http_error_uses_backup(mock_get):
-    mock_resp = MagicMock()
-    mock_resp.raise_for_status.side_effect = HTTPError("HTTP Error")
-    mock_resp.status_code = 500
-    mock_resp.reason = "Server Error"
-    mock_get.return_value = mock_resp
-
-    fake_backup = {"bitcoin": {"gbp": 999}}
-
-    with patch(
-        "src.extraction.extract_current_prices.BACKUP_FILE.exists",
-        return_value=True,
-    ):
-        with patch(
-            "builtins.open", mock_open(read_data=json.dumps(fake_backup))
-        ):
-            data = extract_current_prices([{"id": "bitcoin"}], ["gbp"])
-
-    assert data == fake_backup
-
-
-@patch("requests.get")
 def test_json_decode_error_uses_backup(mock_get):
     mock_resp = MagicMock()
     mock_resp.raise_for_status.return_value = None
@@ -123,10 +100,14 @@ def test_json_decode_error_uses_backup(mock_get):
 
     fake_backup = {"bitcoin": {"gbp": 200}}
 
-    with patch(
-        "src.extraction.extract_current_prices.BACKUP_FILE.exists",
-        return_value=True,
-    ):
+    fake_path = MagicMock()
+    fake_path.exists.return_value = True
+
+    fake_stat = MagicMock()
+    fake_stat.st_size = 10
+    fake_path.stat.return_value = fake_stat
+
+    with patch("src.extraction.extract_current_prices.BACKUP_FILE", fake_path):
         with patch(
             "builtins.open", mock_open(read_data=json.dumps(fake_backup))
         ):

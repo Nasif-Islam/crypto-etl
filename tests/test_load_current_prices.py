@@ -1,97 +1,76 @@
-import pytest  # noqa: F401
-import json  # noqa: F401
-from unittest.mock import patch, MagicMock, mock_open
-from src.extraction.extract_historical_prices import extract_historical_ohlc
-
-MOCK_COINS = [{"id": "bitcoin", "name": "Bitcoin"}]
-MOCK_CURRENCIES = ["usd"]
-MOCK_DAYS = 10
-
-MOCK_OHLC_RESPONSE = [
-    [1700000000000, 35000, 36000, 34000, 35500],
-    [1700086400000, 35500, 36500, 34500, 36000],
-]
+import pytest
+from unittest.mock import patch, MagicMock
+import pandas as pd
+from src.load.load_current_prices import load_current_prices
 
 
-@patch("src.extraction.extract_historical_prices.requests.get")
-@patch(
-    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
-    return_value=False,
-)
-@patch("builtins.open", new_callable=mock_open)
-def test_extract_historical_success(mock_file, mock_exists, mock_get):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 200
-    mock_resp.json.return_value = MOCK_OHLC_RESPONSE
-    mock_get.return_value = mock_resp
+def fake_cleaned_dir(tmp_path, exists=True):
+    """
+    Returns a fake CLEANED_DIR Path-like object that:
+    - has exists() and mkdir()
+    - supports CLEANED_DIR / filename and returns a real path in tmp_path
+    """
+    fake = MagicMock()
 
-    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
+    fake.exists.return_value = exists
+    fake.mkdir.return_value = None
 
-    assert len(records) == 2
+    fake.__truediv__.side_effect = lambda filename: tmp_path / filename
 
-    first = records[0]
-    assert first["coin_id"] == "bitcoin"
-    assert first["coin_name"] == "Bitcoin"
-    assert first["currency"] == "usd"
-
-    assert first["timestamp_ms"] == 1700000000000
-
-    for key in ["open", "high", "low", "close"]:
-        assert key in first
+    return fake
 
 
-@patch("src.extraction.extract_historical_prices.requests.get")
-@patch(
-    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
-    return_value=False,
-)
-@patch("builtins.open", new_callable=mock_open)
-def test_extract_historical_skips_bad_rows(mock_file, mock_exists, mock_get):
-    bad_data = [
-        [1700000000000, 35000, 36000],  # invalid
-        [1700086400000, 35500, 36500, 34500, 36000],  # valid
-    ]
+def test_load_creates_directory_if_missing(tmp_path):
+    df = pd.DataFrame({"coin": ["bitcoin"], "price": [50000]})
 
-    mock_resp = MagicMock()
-    mock_resp.status_code = 200
-    mock_resp.json.return_value = bad_data
-    mock_get.return_value = mock_resp
+    fake_dir = fake_cleaned_dir(tmp_path, exists=False)
 
-    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
+    with patch("src.load.load_current_prices.CLEANED_DIR", fake_dir):
+        with patch(
+            "src.load.load_current_prices.os.path.getsize", return_value=1500
+        ):
+            with patch("pandas.DataFrame.to_csv") as mock_to_csv:
 
-    assert len(records) == 1
+                mock_to_csv.side_effect = lambda path, index=False: (
+                    tmp_path / "current_crypto_prices.csv"
+                ).write_text("data")
 
+                result_path = load_current_prices(df)
 
-@patch("src.extraction.extract_historical_prices.requests.get")
-@patch(
-    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
-    return_value=False,
-)
-@patch("builtins.open", new_callable=mock_open)
-def test_extract_historical_api_failure_no_backup(
-    mock_file, mock_exists, mock_get
-):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 500
-    mock_get.return_value = mock_resp
-
-    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
-    assert records == []
+    fake_dir.mkdir.assert_called_once()
+    assert "current_crypto_prices.csv" in result_path
 
 
-@patch("src.extraction.extract_historical_prices.requests.get")
-@patch(
-    "src.extraction.extract_historical_prices.BACKUP_FILE.exists",
-    return_value=False,
-)
-@patch("builtins.open", new_callable=mock_open)
-def test_extract_historical_json_error_no_backup(
-    mock_file, mock_exists, mock_get
-):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 200
-    mock_resp.json.side_effect = ValueError("Bad JSON")
-    mock_get.return_value = mock_resp
+def test_load_writes_csv_successfully(tmp_path):
+    df = pd.DataFrame({"coin": ["ethereum"], "price": [1800]})
 
-    records = extract_historical_ohlc(MOCK_COINS, MOCK_CURRENCIES, MOCK_DAYS)
-    assert records == []
+    fake_dir = fake_cleaned_dir(tmp_path, exists=True)
+
+    with patch("src.load.load_current_prices.CLEANED_DIR", fake_dir):
+        with patch(
+            "src.load.load_current_prices.os.path.getsize", return_value=2048
+        ):
+            with patch("pandas.DataFrame.to_csv") as mock_to_csv:
+
+                mock_to_csv.side_effect = lambda path, index=False: (
+                    tmp_path / "current_crypto_prices.csv"
+                ).write_text("data")
+
+                result_path = load_current_prices(df)
+
+    mock_to_csv.assert_called_once()
+    assert "current_crypto_prices.csv" in result_path
+
+
+def test_load_raises_error_on_write_failure(tmp_path):
+    df = pd.DataFrame({"coin": ["xrp"], "price": [0.50]})
+
+    fake_dir = fake_cleaned_dir(tmp_path, exists=True)
+
+    with patch("src.load.load_current_prices.CLEANED_DIR", fake_dir):
+        with patch(
+            "pandas.DataFrame.to_csv", side_effect=Exception("Write failed")
+        ):
+
+            with pytest.raises(Exception):
+                load_current_prices(df)
