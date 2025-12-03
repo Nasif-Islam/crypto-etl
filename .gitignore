@@ -96,10 +96,11 @@ config/config.yaml
 notebooks/gitignore/*
 
 # Data files
-data/raw/
+# data/raw/
 # data/cleaned/
-data/hashes/
+# data/hashes/
 # *.csv
+# *.json
 
 # Streamlit cache
 .streamlit/

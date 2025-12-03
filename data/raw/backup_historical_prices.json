@@ -1,0 +1,4602 @@
+[
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1733184000000,
+    "open": 76555.0,
+    "high": 77346.0,
+    "low": 74666.0,
+    "close": 75706.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1733529600000,
+    "open": 75728.0,
+    "high": 81586.0,
+    "low": 72865.0,
+    "close": 78442.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1733875200000,
+    "open": 78412.0,
+    "high": 79408.0,
+    "low": 74036.0,
+    "close": 75635.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1734220800000,
+    "open": 75621.0,
+    "high": 81345.0,
+    "low": 74925.0,
+    "close": 80300.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1734566400000,
+    "open": 80321.0,
+    "high": 85194.0,
+    "low": 79768.0,
+    "close": 79863.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1734912000000,
+    "open": 79684.0,
+    "high": 81607.0,
+    "low": 73760.0,
+    "close": 75654.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1735257600000,
+    "open": 75664.0,
+    "high": 79638.0,
+    "low": 73776.0,
+    "close": 76364.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1735603200000,
+    "open": 76379.0,
+    "high": 77609.0,
+    "low": 72860.0,
+    "close": 73825.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1735948800000,
+    "open": 73847.0,
+    "high": 79643.0,
+    "low": 73226.0,
+    "close": 78954.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1736294400000,
+    "open": 78979.0,
+    "high": 81954.0,
+    "low": 77036.0,
+    "close": 77709.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1736640000000,
+    "open": 77588.0,
+    "high": 78380.0,
+    "low": 74122.0,
+    "close": 77460.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1736985600000,
+    "open": 77471.0,
+    "high": 82267.0,
+    "low": 73933.0,
+    "close": 81939.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1737331200000,
+    "open": 82134.0,
+    "high": 87316.0,
+    "low": 79933.0,
+    "close": 83214.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1737676800000,
+    "open": 83108.0,
+    "high": 89249.0,
+    "low": 81541.0,
+    "close": 84270.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1738022400000,
+    "open": 84204.0,
+    "high": 85701.0,
+    "low": 78558.0,
+    "close": 81830.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1738368000000,
+    "open": 82000.0,
+    "high": 85302.0,
+    "low": 80599.0,
+    "close": 82560.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1738713600000,
+    "open": 82578.0,
+    "high": 82855.0,
+    "low": 75231.0,
+    "close": 78633.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1739059200000,
+    "open": 78455.0,
+    "high": 80331.0,
+    "low": 76952.0,
+    "close": 77854.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1739404800000,
+    "open": 77770.0,
+    "high": 79735.0,
+    "low": 75998.0,
+    "close": 78592.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1739750400000,
+    "open": 78620.0,
+    "high": 78759.0,
+    "low": 76094.0,
+    "close": 76402.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1740096000000,
+    "open": 76383.0,
+    "high": 77962.0,
+    "low": 74181.0,
+    "close": 77639.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1740441600000,
+    "open": 77617.0,
+    "high": 78666.0,
+    "low": 72433.0,
+    "close": 72433.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1740787200000,
+    "open": 72584.0,
+    "high": 73216.0,
+    "low": 62241.0,
+    "close": 67161.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1741132800000,
+    "open": 67062.0,
+    "high": 75308.0,
+    "low": 64285.0,
+    "close": 68258.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1741478400000,
+    "open": 68043.0,
+    "high": 71892.0,
+    "low": 65955.0,
+    "close": 66718.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1741824000000,
+    "open": 66741.0,
+    "high": 66981.0,
+    "low": 59585.0,
+    "close": 64710.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1742169600000,
+    "open": 64551.0,
+    "high": 65874.0,
+    "low": 61766.0,
+    "close": 63882.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1742515200000,
+    "open": 63874.0,
+    "high": 67186.0,
+    "low": 62516.0,
+    "close": 64978.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1742860800000,
+    "open": 65028.0,
+    "high": 68539.0,
+    "low": 64396.0,
+    "close": 67576.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1743206400000,
+    "open": 67705.0,
+    "high": 68388.0,
+    "low": 64617.0,
+    "close": 65165.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1743552000000,
+    "open": 65145.0,
+    "high": 66118.0,
+    "low": 62817.0,
+    "close": 65955.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1743897600000,
+    "open": 65897.0,
+    "high": 67519.0,
+    "low": 61834.0,
+    "close": 64911.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1744243200000,
+    "open": 64848.0,
+    "high": 65053.0,
+    "low": 57777.0,
+    "close": 64456.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1744588800000,
+    "open": 64410.0,
+    "high": 65534.0,
+    "low": 60756.0,
+    "close": 63897.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1744934400000,
+    "open": 63921.0,
+    "high": 65150.0,
+    "low": 62648.0,
+    "close": 64025.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1745280000000,
+    "open": 64032.0,
+    "high": 65929.0,
+    "low": 63375.0,
+    "close": 65369.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1745625600000,
+    "open": 65397.0,
+    "high": 71828.0,
+    "low": 65371.0,
+    "close": 71188.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1745971200000,
+    "open": 71163.0,
+    "high": 71598.0,
+    "low": 69787.0,
+    "close": 70291.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1746316800000,
+    "open": 70297.0,
+    "high": 73583.0,
+    "low": 70051.0,
+    "close": 72258.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1746662400000,
+    "open": 72236.0,
+    "high": 73290.0,
+    "low": 69898.0,
+    "close": 72990.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1747008000000,
+    "open": 73003.0,
+    "high": 78804.0,
+    "low": 72911.0,
+    "close": 78267.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1747353600000,
+    "open": 78345.0,
+    "high": 79927.0,
+    "low": 76539.0,
+    "close": 77946.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1747699200000,
+    "open": 77987.0,
+    "high": 80065.0,
+    "low": 76559.0,
+    "close": 79070.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1748044800000,
+    "open": 79058.0,
+    "high": 83360.0,
+    "low": 78146.0,
+    "close": 79168.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1748390400000,
+    "open": 79123.0,
+    "high": 81737.0,
+    "low": 78856.0,
+    "close": 80709.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1748736000000,
+    "open": 80661.0,
+    "high": 80962.0,
+    "low": 76742.0,
+    "close": 77776.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1749081600000,
+    "open": 77775.0,
+    "high": 78976.0,
+    "low": 76793.0,
+    "close": 77349.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1749427200000,
+    "open": 77340.0,
+    "high": 78835.0,
+    "low": 74231.0,
+    "close": 78094.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1749772800000,
+    "open": 78099.0,
+    "high": 81641.0,
+    "low": 77768.0,
+    "close": 77796.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1750118400000,
+    "open": 77730.0,
+    "high": 80123.0,
+    "low": 76010.0,
+    "close": 78812.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1750464000000,
+    "open": 78744.0,
+    "high": 79285.0,
+    "low": 76206.0,
+    "close": 76761.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1750809600000,
+    "open": 76763.0,
+    "high": 78203.0,
+    "low": 73442.0,
+    "close": 77837.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1751155200000,
+    "open": 77880.0,
+    "high": 79397.0,
+    "low": 77665.0,
+    "close": 78224.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1751500800000,
+    "open": 78225.0,
+    "high": 80398.0,
+    "low": 76651.0,
+    "close": 79723.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1751846400000,
+    "open": 79767.0,
+    "high": 80857.0,
+    "low": 78647.0,
+    "close": 80016.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1752192000000,
+    "open": 80007.0,
+    "high": 85773.0,
+    "low": 78936.0,
+    "close": 85304.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1752537600000,
+    "open": 85397.0,
+    "high": 91099.0,
+    "low": 85257.0,
+    "close": 89251.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1752883200000,
+    "open": 89253.0,
+    "high": 89948.0,
+    "low": 86627.0,
+    "close": 87966.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1753228800000,
+    "open": 87976.0,
+    "high": 88925.0,
+    "low": 86599.0,
+    "close": 88725.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1753574400000,
+    "open": 88722.0,
+    "high": 88722.0,
+    "low": 85380.0,
+    "close": 87813.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1753920000000,
+    "open": 87773.0,
+    "high": 89384.0,
+    "low": 87087.0,
+    "close": 88870.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1754265600000,
+    "open": 88874.0,
+    "high": 89880.0,
+    "low": 84410.0,
+    "close": 85919.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1754611200000,
+    "open": 86021.0,
+    "high": 87442.0,
+    "low": 84764.0,
+    "close": 87325.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1754956800000,
+    "open": 87333.0,
+    "high": 90770.0,
+    "low": 86260.0,
+    "close": 88406.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1755302400000,
+    "open": 88381.0,
+    "high": 91369.0,
+    "low": 86268.0,
+    "close": 86553.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1755648000000,
+    "open": 86595.0,
+    "high": 87403.0,
+    "low": 83623.0,
+    "close": 83623.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1755993600000,
+    "open": 83720.0,
+    "high": 86672.0,
+    "low": 83299.0,
+    "close": 85307.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1756339200000,
+    "open": 85286.0,
+    "high": 85704.0,
+    "low": 80998.0,
+    "close": 82362.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1756684800000,
+    "open": 82373.0,
+    "high": 83956.0,
+    "low": 79735.0,
+    "close": 80169.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1757030400000,
+    "open": 80147.0,
+    "high": 83685.0,
+    "low": 79356.0,
+    "close": 82359.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1757376000000,
+    "open": 82381.0,
+    "high": 83900.0,
+    "low": 81457.0,
+    "close": 82648.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1757721600000,
+    "open": 82698.0,
+    "high": 86036.0,
+    "low": 81894.0,
+    "close": 85683.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1758067200000,
+    "open": 85626.0,
+    "high": 86011.0,
+    "low": 84108.0,
+    "close": 85510.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1758412800000,
+    "open": 85546.0,
+    "high": 86992.0,
+    "low": 84169.0,
+    "close": 85874.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1758758400000,
+    "open": 85880.0,
+    "high": 85968.0,
+    "low": 82446.0,
+    "close": 84237.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1759104000000,
+    "open": 84256.0,
+    "high": 84357.0,
+    "low": 81302.0,
+    "close": 83629.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1759449600000,
+    "open": 83669.0,
+    "high": 90000.0,
+    "low": 82993.0,
+    "close": 89706.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1759795200000,
+    "open": 89626.0,
+    "high": 93529.0,
+    "low": 88780.0,
+    "close": 92530.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1760140800000,
+    "open": 92536.0,
+    "high": 93296.0,
+    "low": 79287.0,
+    "close": 84779.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1760486400000,
+    "open": 84661.0,
+    "high": 86947.0,
+    "low": 82278.0,
+    "close": 84942.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1760832000000,
+    "open": 84873.0,
+    "high": 85053.0,
+    "low": 77322.0,
+    "close": 79806.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1761177600000,
+    "open": 79847.0,
+    "high": 85080.0,
+    "low": 79427.0,
+    "close": 80610.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1761523200000,
+    "open": 80590.0,
+    "high": 86180.0,
+    "low": 80590.0,
+    "close": 85934.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1761868800000,
+    "open": 85889.0,
+    "high": 87488.0,
+    "low": 80987.0,
+    "close": 82261.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1762214400000,
+    "open": 82385.0,
+    "high": 84478.0,
+    "low": 80269.0,
+    "close": 81092.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1762560000000,
+    "open": 81047.0,
+    "high": 81670.0,
+    "low": 75796.0,
+    "close": 78563.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1762905600000,
+    "open": 78419.0,
+    "high": 81579.0,
+    "low": 77126.0,
+    "close": 78278.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1763251200000,
+    "open": 78400.0,
+    "high": 80213.0,
+    "low": 71533.0,
+    "close": 72575.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1763596800000,
+    "open": 72477.0,
+    "high": 73402.0,
+    "low": 67848.0,
+    "close": 69946.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1763942400000,
+    "open": 69991.0,
+    "high": 71182.0,
+    "low": 62151.0,
+    "close": 66264.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1764288000000,
+    "open": 66234.0,
+    "high": 69506.0,
+    "low": 65301.0,
+    "close": 68937.0
+  },
+  {
+    "coin_id": "bitcoin",
+    "coin_name": "Bitcoin",
+    "currency": "gbp",
+    "timestamp_ms": 1764633600000,
+    "open": 68974.0,
+    "high": 70238.0,
+    "low": 63440.0,
+    "close": 65316.0
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1733184000000,
+    "open": 2919.61,
+    "high": 2955.67,
+    "low": 2814.69,
+    "close": 2878.66
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1733529600000,
+    "open": 2879.53,
+    "high": 3209.88,
+    "low": 2794.73,
+    "close": 3149.5
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1733875200000,
+    "open": 3144.79,
+    "high": 3159.97,
+    "low": 2764.9,
+    "close": 2838.06
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1734220800000,
+    "open": 2838.81,
+    "high": 3141.24,
+    "low": 2794.07,
+    "close": 3063.33
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1734566400000,
+    "open": 3064.38,
+    "high": 3217.7,
+    "low": 2885.24,
+    "close": 2887.36
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1734912000000,
+    "open": 2882.27,
+    "high": 2940.65,
+    "low": 2489.34,
+    "close": 2606.2
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1735257600000,
+    "open": 2607.02,
+    "high": 2814.95,
+    "low": 2564.27,
+    "close": 2656.03
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1735603200000,
+    "open": 2659.17,
+    "high": 2740.31,
+    "low": 2625.33,
+    "close": 2677.58
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1735948800000,
+    "open": 2676.58,
+    "high": 2914.66,
+    "low": 2641.14,
+    "close": 2901.31
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1736294400000,
+    "open": 2902.78,
+    "high": 2982.9,
+    "low": 2703.48,
+    "close": 2708.99
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1736640000000,
+    "open": 2708.02,
+    "high": 2743.49,
+    "low": 2567.32,
+    "close": 2689.82
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1736985600000,
+    "open": 2689.34,
+    "high": 2835.4,
+    "low": 2454.04,
+    "close": 2815.65
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1737331200000,
+    "open": 2821.52,
+    "high": 2890.29,
+    "low": 2575.49,
+    "close": 2636.0
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1737676800000,
+    "open": 2631.68,
+    "high": 2813.02,
+    "low": 2583.4,
+    "close": 2698.6
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1738022400000,
+    "open": 2704.18,
+    "high": 2759.54,
+    "low": 2429.53,
+    "close": 2547.02
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1738368000000,
+    "open": 2553.83,
+    "high": 2760.42,
+    "low": 2452.28,
+    "close": 2658.17
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1738713600000,
+    "open": 2659.89,
+    "high": 2683.19,
+    "low": 1929.4,
+    "close": 2196.17
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1739059200000,
+    "open": 2191.84,
+    "high": 2297.92,
+    "low": 2073.61,
+    "close": 2125.06
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1739404800000,
+    "open": 2122.8,
+    "high": 2235.84,
+    "low": 2053.16,
+    "close": 2198.05
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1739750400000,
+    "open": 2198.44,
+    "high": 2211.22,
+    "low": 2092.95,
+    "close": 2113.6
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1740096000000,
+    "open": 2114.65,
+    "high": 2248.52,
+    "low": 2072.75,
+    "close": 2163.49
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1740441600000,
+    "open": 2162.47,
+    "high": 2244.72,
+    "low": 1983.75,
+    "close": 1983.75
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1740787200000,
+    "open": 1993.19,
+    "high": 1997.6,
+    "low": 1653.81,
+    "close": 1777.78
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1741132800000,
+    "open": 1777.39,
+    "high": 2018.81,
+    "low": 1590.83,
+    "close": 1697.64
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1741478400000,
+    "open": 1692.63,
+    "high": 1796.15,
+    "low": 1633.61,
+    "close": 1703.91
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1741824000000,
+    "open": 1705.01,
+    "high": 1709.74,
+    "low": 1390.9,
+    "close": 1473.91
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1742169600000,
+    "open": 1470.85,
+    "high": 1507.67,
+    "low": 1410.77,
+    "close": 1459.78
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1742515200000,
+    "open": 1459.95,
+    "high": 1588.46,
+    "low": 1442.14,
+    "close": 1527.35
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1742860800000,
+    "open": 1531.14,
+    "high": 1624.17,
+    "low": 1499.99,
+    "close": 1607.79
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1743206400000,
+    "open": 1608.68,
+    "high": 1621.47,
+    "low": 1441.9,
+    "close": 1465.31
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1743552000000,
+    "open": 1464.85,
+    "high": 1488.48,
+    "low": 1376.8,
+    "close": 1475.72
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1743897600000,
+    "open": 1474.41,
+    "high": 1487.49,
+    "low": 1335.46,
+    "close": 1405.39
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1744243200000,
+    "open": 1403.05,
+    "high": 1408.18,
+    "low": 1089.34,
+    "close": 1296.98
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1744588800000,
+    "open": 1300.03,
+    "high": 1300.03,
+    "low": 1149.59,
+    "close": 1219.4
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1744934400000,
+    "open": 1220.07,
+    "high": 1275.91,
+    "low": 1173.61,
+    "close": 1193.69
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1745280000000,
+    "open": 1193.67,
+    "high": 1234.29,
+    "low": 1174.23,
+    "close": 1179.12
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1745625600000,
+    "open": 1179.97,
+    "high": 1366.7,
+    "low": 1166.03,
+    "close": 1343.65
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1745971200000,
+    "open": 1342.57,
+    "high": 1388.67,
+    "low": 1310.11,
+    "close": 1340.08
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1746316800000,
+    "open": 1341.39,
+    "high": 1406.46,
+    "low": 1313.33,
+    "close": 1381.92
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1746662400000,
+    "open": 1381.6,
+    "high": 1392.65,
+    "low": 1312.77,
+    "close": 1361.84
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1747008000000,
+    "open": 1363.0,
+    "high": 1944.73,
+    "low": 1361.52,
+    "close": 1887.14
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1747353600000,
+    "open": 1889.05,
+    "high": 2035.37,
+    "low": 1837.72,
+    "close": 1910.75
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1747699200000,
+    "open": 1913.19,
+    "high": 1978.77,
+    "low": 1776.97,
+    "close": 1891.6
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1748044800000,
+    "open": 1892.2,
+    "high": 2023.26,
+    "low": 1838.93,
+    "close": 1860.6
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1748390400000,
+    "open": 1860.91,
+    "high": 1998.5,
+    "low": 1830.84,
+    "close": 1969.91
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1748736000000,
+    "open": 1969.84,
+    "high": 2062.85,
+    "low": 1853.18,
+    "close": 1881.37
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1749081600000,
+    "open": 1880.76,
+    "high": 1965.75,
+    "low": 1833.4,
+    "close": 1926.36
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1749427200000,
+    "open": 1926.03,
+    "high": 1943.14,
+    "low": 1773.29,
+    "close": 1853.69
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1749772800000,
+    "open": 1853.43,
+    "high": 2117.8,
+    "low": 1831.36,
+    "close": 1947.44
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1750118400000,
+    "open": 1944.64,
+    "high": 1968.1,
+    "low": 1821.01,
+    "close": 1887.43
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1750464000000,
+    "open": 1877.99,
+    "high": 1925.6,
+    "low": 1775.68,
+    "close": 1787.82
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1750809600000,
+    "open": 1788.19,
+    "high": 1817.07,
+    "low": 1593.2,
+    "close": 1796.94
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1751155200000,
+    "open": 1797.49,
+    "high": 1830.46,
+    "low": 1745.97,
+    "close": 1776.21
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1751500800000,
+    "open": 1775.93,
+    "high": 1908.57,
+    "low": 1741.64,
+    "close": 1885.73
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1751846400000,
+    "open": 1884.58,
+    "high": 1926.0,
+    "low": 1815.28,
+    "close": 1883.9
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1752192000000,
+    "open": 1883.17,
+    "high": 2194.66,
+    "low": 1853.56,
+    "close": 2170.47
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1752537600000,
+    "open": 2171.55,
+    "high": 2279.01,
+    "low": 2154.95,
+    "close": 2243.44
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1752883200000,
+    "open": 2243.88,
+    "high": 2735.36,
+    "low": 2190.44,
+    "close": 2644.68
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1753228800000,
+    "open": 2645.51,
+    "high": 2852.71,
+    "low": 2627.25,
+    "close": 2771.41
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1753574400000,
+    "open": 2769.98,
+    "high": 2809.24,
+    "low": 2603.27,
+    "close": 2786.0
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1753920000000,
+    "open": 2783.97,
+    "high": 2931.47,
+    "low": 2782.11,
+    "close": 2871.57
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1754265600000,
+    "open": 2872.19,
+    "high": 2922.55,
+    "low": 2539.94,
+    "close": 2631.43
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1754611200000,
+    "open": 2633.89,
+    "high": 2912.71,
+    "low": 2631.6,
+    "close": 2907.5
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1754956800000,
+    "open": 2905.01,
+    "high": 3239.14,
+    "low": 2890.48,
+    "close": 3147.62
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1755302400000,
+    "open": 3146.25,
+    "high": 3520.23,
+    "low": 3146.25,
+    "close": 3268.08
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1755648000000,
+    "open": 3273.31,
+    "high": 3365.7,
+    "low": 3021.15,
+    "close": 3021.15
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1755993600000,
+    "open": 3026.07,
+    "high": 3605.99,
+    "low": 3023.46,
+    "close": 3530.2
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1756339200000,
+    "open": 3536.51,
+    "high": 3685.5,
+    "low": 3220.43,
+    "close": 3332.64
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1756684800000,
+    "open": 3334.61,
+    "high": 3428.31,
+    "low": 3169.58,
+    "close": 3250.29
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1757030400000,
+    "open": 3247.79,
+    "high": 3336.67,
+    "low": 3129.83,
+    "close": 3196.99
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1757376000000,
+    "open": 3200.43,
+    "high": 3304.37,
+    "low": 3146.64,
+    "close": 3179.74
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1757721600000,
+    "open": 3178.35,
+    "high": 3482.36,
+    "low": 3154.5,
+    "close": 3473.36
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1758067200000,
+    "open": 3472.1,
+    "high": 3513.25,
+    "low": 3242.5,
+    "close": 3298.66
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1758412800000,
+    "open": 3298.42,
+    "high": 3422.34,
+    "low": 3254.3,
+    "close": 3326.01
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1758758400000,
+    "open": 3325.78,
+    "high": 3335.84,
+    "low": 3035.77,
+    "close": 3083.9
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1759104000000,
+    "open": 3087.8,
+    "high": 3092.27,
+    "low": 2874.92,
+    "close": 3088.72
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1759449600000,
+    "open": 3087.59,
+    "high": 3356.93,
+    "low": 3041.38,
+    "close": 3334.58
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1759795200000,
+    "open": 3334.84,
+    "high": 3511.56,
+    "low": 3299.93,
+    "close": 3477.39
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1760140800000,
+    "open": 3479.82,
+    "high": 3541.52,
+    "low": 2676.54,
+    "close": 2872.59
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1760486400000,
+    "open": 2877.12,
+    "high": 3212.68,
+    "low": 2744.34,
+    "close": 3099.37
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1760832000000,
+    "open": 3097.34,
+    "high": 3148.34,
+    "low": 2745.23,
+    "close": 2896.77
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1761177600000,
+    "open": 2897.16,
+    "high": 3068.36,
+    "low": 2790.07,
+    "close": 2847.66
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1761523200000,
+    "open": 2850.39,
+    "high": 3132.26,
+    "low": 2850.39,
+    "close": 3124.0
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1761868800000,
+    "open": 3121.64,
+    "high": 3188.52,
+    "low": 2804.96,
+    "close": 2889.68
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1762214400000,
+    "open": 2888.98,
+    "high": 2978.68,
+    "low": 2719.41,
+    "close": 2741.13
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1762560000000,
+    "open": 2741.15,
+    "high": 2778.99,
+    "low": 2379.17,
+    "close": 2609.49
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1762905600000,
+    "open": 2603.85,
+    "high": 2775.21,
+    "low": 2553.6,
+    "close": 2597.67
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1763251200000,
+    "open": 2597.35,
+    "high": 2735.41,
+    "low": 2338.78,
+    "close": 2408.9
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1763596800000,
+    "open": 2408.58,
+    "high": 2464.72,
+    "low": 2201.18,
+    "close": 2310.33
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1763942400000,
+    "open": 2313.1,
+    "high": 2337.03,
+    "low": 2018.92,
+    "close": 2137.8
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1764288000000,
+    "open": 2137.22,
+    "high": 2313.05,
+    "low": 2116.58,
+    "close": 2277.48
+  },
+  {
+    "coin_id": "ethereum",
+    "coin_name": "Ethereum",
+    "currency": "gbp",
+    "timestamp_ms": 1764633600000,
+    "open": 2276.99,
+    "high": 2338.12,
+    "low": 2058.64,
+    "close": 2118.91
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1733184000000,
+    "open": 516.17,
+    "high": 525.18,
+    "low": 496.92,
+    "close": 511.23
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1733529600000,
+    "open": 511.47,
+    "high": 622.34,
+    "low": 497.92,
+    "close": 574.77
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1733875200000,
+    "open": 574.26,
+    "high": 597.01,
+    "low": 511.11,
+    "close": 528.56
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1734220800000,
+    "open": 528.86,
+    "high": 580.35,
+    "low": 516.31,
+    "close": 566.76
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1734566400000,
+    "open": 566.81,
+    "high": 579.62,
+    "low": 546.34,
+    "close": 547.24
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1734912000000,
+    "open": 545.65,
+    "high": 559.06,
+    "low": 494.83,
+    "close": 515.98
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1735257600000,
+    "open": 516.16,
+    "high": 571.47,
+    "low": 507.76,
+    "close": 548.71
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1735603200000,
+    "open": 549.41,
+    "high": 579.66,
+    "low": 544.13,
+    "close": 560.39
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1735948800000,
+    "open": 560.7,
+    "high": 577.62,
+    "low": 556.16,
+    "close": 573.97
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1736294400000,
+    "open": 574.62,
+    "high": 593.04,
+    "low": 554.86,
+    "close": 558.53
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1736640000000,
+    "open": 558.67,
+    "high": 575.51,
+    "low": 547.46,
+    "close": 570.74
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1736985600000,
+    "open": 570.66,
+    "high": 584.36,
+    "low": 543.6,
+    "close": 583.87
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1737331200000,
+    "open": 584.7,
+    "high": 598.59,
+    "low": 554.35,
+    "close": 560.66
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1737676800000,
+    "open": 559.48,
+    "high": 586.25,
+    "low": 539.06,
+    "close": 558.49
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1738022400000,
+    "open": 558.99,
+    "high": 559.28,
+    "low": 512.84,
+    "close": 545.5
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1738368000000,
+    "open": 546.38,
+    "high": 554.85,
+    "low": 529.8,
+    "close": 546.01
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1738713600000,
+    "open": 546.3,
+    "high": 549.56,
+    "low": 426.61,
+    "close": 459.69
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1739059200000,
+    "open": 458.88,
+    "high": 510.27,
+    "low": 448.38,
+    "close": 495.63
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1739404800000,
+    "open": 493.77,
+    "high": 565.08,
+    "low": 482.71,
+    "close": 560.76
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1739750400000,
+    "open": 560.87,
+    "high": 584.24,
+    "low": 518.22,
+    "close": 536.15
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1740096000000,
+    "open": 535.67,
+    "high": 540.71,
+    "low": 500.75,
+    "close": 518.68
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1740441600000,
+    "open": 518.29,
+    "high": 537.28,
+    "low": 484.74,
+    "close": 484.74
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1740787200000,
+    "open": 485.89,
+    "high": 498.21,
+    "low": 443.98,
+    "close": 467.31
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1741132800000,
+    "open": 466.93,
+    "high": 507.19,
+    "low": 432.44,
+    "close": 455.9
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1741478400000,
+    "open": 455.33,
+    "high": 473.81,
+    "low": 447.39,
+    "close": 459.34
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1741824000000,
+    "open": 459.41,
+    "high": 459.41,
+    "low": 397.62,
+    "close": 440.26
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1742169600000,
+    "open": 439.21,
+    "high": 479.95,
+    "low": 437.79,
+    "close": 465.53
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1742515200000,
+    "open": 465.83,
+    "high": 495.15,
+    "low": 465.72,
+    "close": 485.94
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1742860800000,
+    "open": 486.14,
+    "high": 495.28,
+    "low": 479.34,
+    "close": 492.0
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1743206400000,
+    "open": 493.11,
+    "high": 499.16,
+    "low": 475.87,
+    "close": 478.56
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1743552000000,
+    "open": 478.48,
+    "high": 481.37,
+    "low": 455.23,
+    "close": 472.8
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1743897600000,
+    "open": 472.57,
+    "high": 473.02,
+    "low": 439.31,
+    "close": 461.3
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1744243200000,
+    "open": 460.9,
+    "high": 460.9,
+    "low": 405.33,
+    "close": 454.23
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1744588800000,
+    "open": 454.1,
+    "high": 458.34,
+    "low": 438.23,
+    "close": 446.09
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1744934400000,
+    "open": 446.17,
+    "high": 450.54,
+    "low": 434.85,
+    "close": 444.88
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1745280000000,
+    "open": 444.92,
+    "high": 453.94,
+    "low": 443.05,
+    "close": 446.06
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1745625600000,
+    "open": 446.28,
+    "high": 466.19,
+    "low": 446.28,
+    "close": 450.83
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1745971200000,
+    "open": 450.89,
+    "high": 457.42,
+    "low": 446.59,
+    "close": 447.89
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1746316800000,
+    "open": 448.11,
+    "high": 455.02,
+    "low": 445.21,
+    "close": 451.41
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1746662400000,
+    "open": 451.44,
+    "high": 455.72,
+    "low": 439.89,
+    "close": 453.72
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1747008000000,
+    "open": 453.63,
+    "high": 506.84,
+    "low": 450.73,
+    "close": 489.85
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1747353600000,
+    "open": 489.99,
+    "high": 523.31,
+    "low": 485.25,
+    "close": 489.38
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1747699200000,
+    "open": 489.43,
+    "high": 494.75,
+    "low": 475.81,
+    "close": 487.34
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1748044800000,
+    "open": 487.29,
+    "high": 513.18,
+    "low": 479.96,
+    "close": 483.92
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1748390400000,
+    "open": 485.22,
+    "high": 513.06,
+    "low": 485.22,
+    "close": 508.69
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1748736000000,
+    "open": 508.65,
+    "high": 513.91,
+    "low": 481.91,
+    "close": 489.27
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1749081600000,
+    "open": 489.26,
+    "high": 496.61,
+    "low": 480.74,
+    "close": 489.79
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1749427200000,
+    "open": 489.74,
+    "high": 494.09,
+    "low": 462.16,
+    "close": 481.83
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1749772800000,
+    "open": 481.84,
+    "high": 498.88,
+    "low": 478.08,
+    "close": 481.86
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1750118400000,
+    "open": 481.47,
+    "high": 486.0,
+    "low": 471.26,
+    "close": 480.07
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1750464000000,
+    "open": 479.52,
+    "high": 486.22,
+    "low": 474.59,
+    "close": 476.71
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1750809600000,
+    "open": 476.79,
+    "high": 479.3,
+    "low": 449.81,
+    "close": 472.57
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1751155200000,
+    "open": 473.17,
+    "high": 477.14,
+    "low": 466.63,
+    "close": 472.83
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1751500800000,
+    "open": 472.82,
+    "high": 487.5,
+    "low": 469.23,
+    "close": 483.53
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1751846400000,
+    "open": 483.53,
+    "high": 487.73,
+    "low": 476.76,
+    "close": 485.82
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1752192000000,
+    "open": 485.79,
+    "high": 505.64,
+    "low": 482.46,
+    "close": 504.5
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1752537600000,
+    "open": 504.97,
+    "high": 524.29,
+    "low": 504.03,
+    "close": 513.35
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1752883200000,
+    "open": 513.24,
+    "high": 564.24,
+    "low": 502.84,
+    "close": 543.89
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1753228800000,
+    "open": 543.99,
+    "high": 581.9,
+    "low": 538.66,
+    "close": 581.71
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1753574400000,
+    "open": 581.9,
+    "high": 596.83,
+    "low": 550.43,
+    "close": 591.29
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1753920000000,
+    "open": 590.24,
+    "high": 639.77,
+    "low": 583.93,
+    "close": 598.74
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1754265600000,
+    "open": 598.31,
+    "high": 613.72,
+    "low": 550.91,
+    "close": 565.32
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1754611200000,
+    "open": 565.68,
+    "high": 585.22,
+    "low": 561.85,
+    "close": 585.22
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1754956800000,
+    "open": 585.69,
+    "high": 613.33,
+    "low": 581.17,
+    "close": 600.54
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1755302400000,
+    "open": 600.15,
+    "high": 638.07,
+    "low": 593.79,
+    "close": 610.23
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1755648000000,
+    "open": 610.48,
+    "high": 636.26,
+    "low": 610.12,
+    "close": 610.58
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1755993600000,
+    "open": 610.45,
+    "high": 665.36,
+    "low": 608.01,
+    "close": 650.9
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1756339200000,
+    "open": 650.96,
+    "high": 657.08,
+    "low": 616.96,
+    "close": 633.93
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1756684800000,
+    "open": 633.45,
+    "high": 651.94,
+    "low": 631.19,
+    "close": 635.27
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1757030400000,
+    "open": 634.38,
+    "high": 642.74,
+    "low": 621.09,
+    "close": 627.54
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1757376000000,
+    "open": 627.58,
+    "high": 655.55,
+    "low": 626.62,
+    "close": 647.97
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1757721600000,
+    "open": 648.67,
+    "high": 684.96,
+    "low": 643.31,
+    "close": 682.43
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1758067200000,
+    "open": 682.52,
+    "high": 702.07,
+    "low": 671.5,
+    "close": 699.64
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1758412800000,
+    "open": 700.23,
+    "high": 773.63,
+    "low": 693.23,
+    "close": 773.59
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1758758400000,
+    "open": 774.23,
+    "high": 800.79,
+    "low": 714.69,
+    "close": 756.78
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1759104000000,
+    "open": 757.26,
+    "high": 757.88,
+    "low": 699.14,
+    "close": 740.67
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1759449600000,
+    "open": 740.88,
+    "high": 816.46,
+    "low": 739.44,
+    "close": 810.82
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1759795200000,
+    "open": 811.56,
+    "high": 921.24,
+    "low": 807.12,
+    "close": 908.13
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1760140800000,
+    "open": 909.53,
+    "high": 991.83,
+    "low": 681.23,
+    "close": 831.91
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1760486400000,
+    "open": 827.18,
+    "high": 1028.73,
+    "low": 811.84,
+    "close": 910.01
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1760832000000,
+    "open": 908.45,
+    "high": 915.15,
+    "low": 763.4,
+    "close": 813.63
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1761177600000,
+    "open": 813.8,
+    "high": 850.99,
+    "low": 788.62,
+    "close": 802.46
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1761523200000,
+    "open": 802.92,
+    "high": 862.39,
+    "low": 802.92,
+    "close": 853.43
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1761868800000,
+    "open": 854.34,
+    "high": 883.71,
+    "low": 798.39,
+    "close": 819.81
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1762214400000,
+    "open": 819.03,
+    "high": 840.45,
+    "low": 741.95,
+    "close": 755.33
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1762560000000,
+    "open": 755.76,
+    "high": 761.76,
+    "low": 682.56,
+    "close": 752.67
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1762905600000,
+    "open": 753.38,
+    "high": 773.73,
+    "low": 727.35,
+    "close": 727.69
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1763251200000,
+    "open": 728.18,
+    "high": 745.86,
+    "low": 676.3,
+    "close": 708.19
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1763596800000,
+    "open": 708.42,
+    "high": 721.13,
+    "low": 667.72,
+    "close": 685.03
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1763942400000,
+    "open": 686.3,
+    "high": 699.21,
+    "low": 608.69,
+    "close": 643.69
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1764288000000,
+    "open": 643.51,
+    "high": 680.66,
+    "low": 635.87,
+    "close": 676.23
+  },
+  {
+    "coin_id": "binancecoin",
+    "coin_name": "BNB",
+    "currency": "gbp",
+    "timestamp_ms": 1764633600000,
+    "open": 676.42,
+    "high": 684.28,
+    "low": 606.96,
+    "close": 626.42
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1733184000000,
+    "open": 186.69,
+    "high": 187.02,
+    "low": 174.18,
+    "close": 178.17
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1733529600000,
+    "open": 178.26,
+    "high": 193.25,
+    "low": 171.68,
+    "close": 185.96
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1733875200000,
+    "open": 186.04,
+    "high": 190.46,
+    "low": 160.07,
+    "close": 167.1
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1734220800000,
+    "open": 167.2,
+    "high": 184.3,
+    "low": 165.9,
+    "close": 174.18
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1734566400000,
+    "open": 174.18,
+    "high": 179.75,
+    "low": 163.04,
+    "close": 163.43
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1734912000000,
+    "open": 163.8,
+    "high": 167.96,
+    "low": 140.84,
+    "close": 143.32
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1735257600000,
+    "open": 143.41,
+    "high": 160.56,
+    "low": 140.72,
+    "close": 150.16
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1735603200000,
+    "open": 150.26,
+    "high": 156.51,
+    "low": 145.25,
+    "close": 151.99
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1735948800000,
+    "open": 152.17,
+    "high": 176.71,
+    "low": 149.94,
+    "close": 175.2
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1736294400000,
+    "open": 175.31,
+    "high": 177.61,
+    "low": 162.07,
+    "close": 162.29
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1736640000000,
+    "open": 162.09,
+    "high": 162.73,
+    "low": 148.13,
+    "close": 154.06
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1736985600000,
+    "open": 154.04,
+    "high": 168.19,
+    "low": 142.1,
+    "close": 168.07
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1737331200000,
+    "open": 168.4,
+    "high": 240.85,
+    "low": 162.96,
+    "close": 207.04
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1737676800000,
+    "open": 206.35,
+    "high": 223.0,
+    "low": 189.21,
+    "close": 205.27
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1738022400000,
+    "open": 205.98,
+    "high": 217.46,
+    "low": 177.58,
+    "close": 188.59
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1738368000000,
+    "open": 188.88,
+    "high": 195.66,
+    "low": 180.03,
+    "close": 186.68
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1738713600000,
+    "open": 186.76,
+    "high": 188.56,
+    "low": 149.23,
+    "close": 166.23
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1739059200000,
+    "open": 165.87,
+    "high": 167.19,
+    "low": 151.48,
+    "close": 161.02
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1739404800000,
+    "open": 160.86,
+    "high": 168.19,
+    "low": 153.14,
+    "close": 157.93
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1739750400000,
+    "open": 157.89,
+    "high": 162.64,
+    "low": 148.73,
+    "close": 149.52
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1740096000000,
+    "open": 149.6,
+    "high": 150.37,
+    "low": 128.28,
+    "close": 138.91
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1740441600000,
+    "open": 138.97,
+    "high": 142.58,
+    "low": 111.88,
+    "close": 111.88
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1740787200000,
+    "open": 112.51,
+    "high": 117.93,
+    "low": 100.2,
+    "close": 117.85
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1741132800000,
+    "open": 117.7,
+    "high": 141.5,
+    "low": 104.35,
+    "close": 113.41
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1741478400000,
+    "open": 112.84,
+    "high": 118.48,
+    "low": 104.91,
+    "close": 106.02
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1741824000000,
+    "open": 106.01,
+    "high": 108.17,
+    "low": 88.3,
+    "close": 97.63
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1742169600000,
+    "open": 97.53,
+    "high": 105.35,
+    "low": 93.51,
+    "close": 97.56
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1742515200000,
+    "open": 97.56,
+    "high": 104.57,
+    "low": 94.05,
+    "close": 98.45
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1742860800000,
+    "open": 98.57,
+    "high": 112.15,
+    "low": 97.0,
+    "close": 108.78
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1743206400000,
+    "open": 109.11,
+    "high": 113.7,
+    "low": 99.25,
+    "close": 99.99
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1743552000000,
+    "open": 100.07,
+    "high": 100.64,
+    "low": 94.9,
+    "close": 98.12
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1743897600000,
+    "open": 98.01,
+    "high": 103.1,
+    "low": 85.54,
+    "close": 93.31
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1744243200000,
+    "open": 93.31,
+    "high": 93.83,
+    "low": 74.98,
+    "close": 92.81
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1744588800000,
+    "open": 92.84,
+    "high": 102.02,
+    "low": 84.1,
+    "close": 98.01
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1744934400000,
+    "open": 97.99,
+    "high": 102.43,
+    "low": 93.35,
+    "close": 101.48
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1745280000000,
+    "open": 101.53,
+    "high": 106.82,
+    "low": 100.04,
+    "close": 101.91
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1745625600000,
+    "open": 101.95,
+    "high": 116.73,
+    "low": 101.71,
+    "close": 113.36
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1745971200000,
+    "open": 113.38,
+    "high": 114.84,
+    "low": 108.42,
+    "close": 109.25
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1746316800000,
+    "open": 109.19,
+    "high": 115.32,
+    "low": 106.15,
+    "close": 110.58
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1746662400000,
+    "open": 110.56,
+    "high": 111.82,
+    "low": 105.98,
+    "close": 110.73
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1747008000000,
+    "open": 110.75,
+    "high": 135.01,
+    "low": 110.75,
+    "close": 130.09
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1747353600000,
+    "open": 130.23,
+    "high": 138.34,
+    "low": 126.24,
+    "close": 126.83
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1747699200000,
+    "open": 127.04,
+    "high": 132.6,
+    "low": 120.11,
+    "close": 124.8
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1748044800000,
+    "open": 124.84,
+    "high": 138.48,
+    "low": 123.52,
+    "close": 128.8
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1748390400000,
+    "open": 128.7,
+    "high": 132.4,
+    "low": 125.44,
+    "close": 130.67
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1748736000000,
+    "open": 130.68,
+    "high": 131.07,
+    "low": 113.51,
+    "close": 116.54
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1749081600000,
+    "open": 116.51,
+    "high": 120.25,
+    "low": 112.21,
+    "close": 113.3
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1749427200000,
+    "open": 113.26,
+    "high": 114.33,
+    "low": 104.88,
+    "close": 112.68
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1749772800000,
+    "open": 112.64,
+    "high": 123.97,
+    "low": 110.65,
+    "close": 112.05
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1750118400000,
+    "open": 111.98,
+    "high": 116.7,
+    "low": 104.69,
+    "close": 111.59
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1750464000000,
+    "open": 111.23,
+    "high": 113.5,
+    "low": 101.72,
+    "close": 104.07
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1750809600000,
+    "open": 104.09,
+    "high": 108.08,
+    "low": 94.65,
+    "close": 107.09
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1751155200000,
+    "open": 107.18,
+    "high": 110.89,
+    "low": 100.51,
+    "close": 109.89
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1751500800000,
+    "open": 109.9,
+    "high": 115.43,
+    "low": 105.87,
+    "close": 111.48
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1751846400000,
+    "open": 111.58,
+    "high": 114.24,
+    "low": 106.64,
+    "close": 111.32
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1752192000000,
+    "open": 111.28,
+    "high": 121.28,
+    "low": 108.58,
+    "close": 120.62
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1752537600000,
+    "open": 120.59,
+    "high": 124.81,
+    "low": 117.24,
+    "close": 120.87
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1752883200000,
+    "open": 120.85,
+    "high": 137.04,
+    "low": 117.92,
+    "close": 132.24
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1753228800000,
+    "open": 132.22,
+    "high": 151.84,
+    "low": 130.2,
+    "close": 151.84
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1753574400000,
+    "open": 151.76,
+    "high": 151.76,
+    "low": 131.22,
+    "close": 137.68
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1753920000000,
+    "open": 137.59,
+    "high": 144.66,
+    "low": 130.83,
+    "close": 134.16
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1754265600000,
+    "open": 134.14,
+    "high": 137.97,
+    "low": 117.54,
+    "close": 121.81
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1754611200000,
+    "open": 121.87,
+    "high": 130.38,
+    "low": 121.32,
+    "close": 130.38
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1754956800000,
+    "open": 130.28,
+    "high": 138.37,
+    "low": 129.41,
+    "close": 130.29
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1755302400000,
+    "open": 130.24,
+    "high": 154.08,
+    "low": 129.29,
+    "close": 136.9
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1755648000000,
+    "open": 136.98,
+    "high": 143.89,
+    "low": 130.64,
+    "close": 130.8
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1755993600000,
+    "open": 130.72,
+    "high": 153.5,
+    "low": 130.72,
+    "close": 150.87
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1756339200000,
+    "open": 151.05,
+    "high": 157.66,
+    "low": 138.19,
+    "close": 150.55
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1756684800000,
+    "open": 150.27,
+    "high": 161.27,
+    "low": 146.68,
+    "close": 148.78
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1757030400000,
+    "open": 148.26,
+    "high": 158.33,
+    "low": 143.58,
+    "close": 150.76
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1757376000000,
+    "open": 150.62,
+    "high": 159.95,
+    "low": 147.83,
+    "close": 157.96
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1757721600000,
+    "open": 158.16,
+    "high": 179.69,
+    "low": 155.81,
+    "close": 178.68
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1758067200000,
+    "open": 178.65,
+    "high": 183.56,
+    "low": 169.61,
+    "close": 173.57
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1758412800000,
+    "open": 173.53,
+    "high": 186.44,
+    "low": 170.34,
+    "close": 177.71
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1758758400000,
+    "open": 177.78,
+    "high": 179.36,
+    "low": 152.74,
+    "close": 157.29
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1759104000000,
+    "open": 157.35,
+    "high": 157.75,
+    "low": 143.29,
+    "close": 157.16
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1759449600000,
+    "open": 157.19,
+    "high": 174.5,
+    "low": 152.18,
+    "close": 174.5
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1759795200000,
+    "open": 174.61,
+    "high": 176.02,
+    "low": 166.72,
+    "close": 172.49
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1760140800000,
+    "open": 172.58,
+    "high": 174.47,
+    "low": 132.32,
+    "close": 142.21
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1760486400000,
+    "open": 141.39,
+    "high": 158.1,
+    "low": 130.16,
+    "close": 152.22
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1760832000000,
+    "open": 152.07,
+    "high": 155.48,
+    "low": 130.36,
+    "close": 139.69
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1761177600000,
+    "open": 139.76,
+    "high": 147.42,
+    "low": 133.1,
+    "close": 134.85
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1761523200000,
+    "open": 134.89,
+    "high": 150.55,
+    "low": 134.87,
+    "close": 150.19
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1761868800000,
+    "open": 150.15,
+    "high": 153.96,
+    "low": 136.51,
+    "close": 140.05
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1762214400000,
+    "open": 140.21,
+    "high": 144.5,
+    "low": 124.84,
+    "close": 126.32
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1762560000000,
+    "open": 126.3,
+    "high": 128.17,
+    "low": 113.63,
+    "close": 123.0
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1762905600000,
+    "open": 122.87,
+    "high": 130.35,
+    "low": 117.34,
+    "close": 117.34
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1763251200000,
+    "open": 117.59,
+    "high": 122.87,
+    "low": 103.58,
+    "close": 106.07
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1763596800000,
+    "open": 105.83,
+    "high": 108.78,
+    "low": 98.36,
+    "close": 104.45
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1763942400000,
+    "open": 104.68,
+    "high": 110.5,
+    "low": 94.03,
+    "close": 99.91
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1764288000000,
+    "open": 99.71,
+    "high": 109.1,
+    "low": 98.28,
+    "close": 106.36
+  },
+  {
+    "coin_id": "solana",
+    "coin_name": "Solana",
+    "currency": "gbp",
+    "timestamp_ms": 1764633600000,
+    "open": 106.38,
+    "high": 108.3,
+    "low": 93.38,
+    "close": 95.95
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1733184000000,
+    "open": 1.8,
+    "high": 2.22,
+    "low": 1.77,
+    "close": 2.14
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1733529600000,
+    "open": 2.14,
+    "high": 2.22,
+    "low": 1.72,
+    "close": 1.9
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1733875200000,
+    "open": 1.9,
+    "high": 2.06,
+    "low": 1.52,
+    "close": 1.84
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1734220800000,
+    "open": 1.85,
+    "high": 1.99,
+    "low": 1.75,
+    "close": 1.9
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1734566400000,
+    "open": 1.9,
+    "high": 2.14,
+    "low": 1.83,
+    "close": 1.83
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1734912000000,
+    "open": 1.83,
+    "high": 1.92,
+    "low": 1.58,
+    "close": 1.75
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1735257600000,
+    "open": 1.75,
+    "high": 1.87,
+    "low": 1.7,
+    "close": 1.72
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1735603200000,
+    "open": 1.72,
+    "high": 1.78,
+    "low": 1.6,
+    "close": 1.64
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1735948800000,
+    "open": 1.64,
+    "high": 1.99,
+    "low": 1.61,
+    "close": 1.98
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1736294400000,
+    "open": 1.98,
+    "high": 2.01,
+    "low": 1.82,
+    "close": 1.83
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1736640000000,
+    "open": 1.82,
+    "high": 2.12,
+    "low": 1.8,
+    "close": 2.11
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1736985600000,
+    "open": 2.11,
+    "high": 2.59,
+    "low": 1.93,
+    "close": 2.59
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1737331200000,
+    "open": 2.58,
+    "high": 2.76,
+    "low": 2.4,
+    "close": 2.43
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1737676800000,
+    "open": 2.42,
+    "high": 2.72,
+    "low": 2.41,
+    "close": 2.53
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1738022400000,
+    "open": 2.52,
+    "high": 2.58,
+    "low": 2.2,
+    "close": 2.45
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1738368000000,
+    "open": 2.45,
+    "high": 2.58,
+    "low": 2.4,
+    "close": 2.45
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1738713600000,
+    "open": 2.45,
+    "high": 2.47,
+    "low": 1.63,
+    "close": 2.04
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1739059200000,
+    "open": 2.03,
+    "high": 2.05,
+    "low": 1.84,
+    "close": 1.96
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1739404800000,
+    "open": 1.95,
+    "high": 2.04,
+    "low": 1.88,
+    "close": 1.99
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1739750400000,
+    "open": 1.99,
+    "high": 2.24,
+    "low": 1.94,
+    "close": 2.17
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1740096000000,
+    "open": 2.17,
+    "high": 2.19,
+    "low": 1.97,
+    "close": 2.12
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1740441600000,
+    "open": 2.12,
+    "high": 2.14,
+    "low": 1.8,
+    "close": 1.8
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1740787200000,
+    "open": 1.81,
+    "high": 1.86,
+    "low": 1.56,
+    "close": 1.71
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1741132800000,
+    "open": 1.71,
+    "high": 2.35,
+    "low": 1.69,
+    "close": 1.92
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1741478400000,
+    "open": 1.92,
+    "high": 2.05,
+    "low": 1.79,
+    "close": 1.8
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1741824000000,
+    "open": 1.8,
+    "high": 1.82,
+    "low": 1.49,
+    "close": 1.73
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1742169600000,
+    "open": 1.73,
+    "high": 1.91,
+    "low": 1.71,
+    "close": 1.78
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1742515200000,
+    "open": 1.78,
+    "high": 1.98,
+    "low": 1.71,
+    "close": 1.88
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1742860800000,
+    "open": 1.88,
+    "high": 1.93,
+    "low": 1.83,
+    "close": 1.89
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1743206400000,
+    "open": 1.9,
+    "high": 1.92,
+    "low": 1.67,
+    "close": 1.7
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1743552000000,
+    "open": 1.7,
+    "high": 1.72,
+    "low": 1.58,
+    "close": 1.66
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1743897600000,
+    "open": 1.65,
+    "high": 1.69,
+    "low": 1.5,
+    "close": 1.67
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1744243200000,
+    "open": 1.66,
+    "high": 1.67,
+    "low": 1.28,
+    "close": 1.6
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1744588800000,
+    "open": 1.6,
+    "high": 1.7,
+    "low": 1.49,
+    "close": 1.62
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1744934400000,
+    "open": 1.62,
+    "high": 1.65,
+    "low": 1.54,
+    "close": 1.56
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1745280000000,
+    "open": 1.56,
+    "high": 1.6,
+    "low": 1.54,
+    "close": 1.56
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1745625600000,
+    "open": 1.56,
+    "high": 1.72,
+    "low": 1.54,
+    "close": 1.64
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1745971200000,
+    "open": 1.64,
+    "high": 1.76,
+    "low": 1.63,
+    "close": 1.67
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1746316800000,
+    "open": 1.67,
+    "high": 1.7,
+    "low": 1.61,
+    "close": 1.65
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1746662400000,
+    "open": 1.65,
+    "high": 1.67,
+    "low": 1.56,
+    "close": 1.6
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1747008000000,
+    "open": 1.6,
+    "high": 1.86,
+    "low": 1.6,
+    "close": 1.78
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1747353600000,
+    "open": 1.78,
+    "high": 1.98,
+    "low": 1.78,
+    "close": 1.79
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1747699200000,
+    "open": 1.79,
+    "high": 1.84,
+    "low": 1.72,
+    "close": 1.78
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1748044800000,
+    "open": 1.78,
+    "high": 1.84,
+    "low": 1.7,
+    "close": 1.7
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1748390400000,
+    "open": 1.7,
+    "high": 1.74,
+    "low": 1.68,
+    "close": 1.72
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1748736000000,
+    "open": 1.71,
+    "high": 1.72,
+    "low": 1.56,
+    "close": 1.62
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1749081600000,
+    "open": 1.62,
+    "high": 1.68,
+    "low": 1.58,
+    "close": 1.63
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1749427200000,
+    "open": 1.63,
+    "high": 1.69,
+    "low": 1.53,
+    "close": 1.67
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1749772800000,
+    "open": 1.67,
+    "high": 1.72,
+    "low": 1.6,
+    "close": 1.61
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1750118400000,
+    "open": 1.61,
+    "high": 1.72,
+    "low": 1.55,
+    "close": 1.66
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1750464000000,
+    "open": 1.65,
+    "high": 1.66,
+    "low": 1.55,
+    "close": 1.58
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1750809600000,
+    "open": 1.58,
+    "high": 1.63,
+    "low": 1.44,
+    "close": 1.61
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1751155200000,
+    "open": 1.61,
+    "high": 1.64,
+    "low": 1.51,
+    "close": 1.59
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1751500800000,
+    "open": 1.59,
+    "high": 1.68,
+    "low": 1.57,
+    "close": 1.64
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1751846400000,
+    "open": 1.64,
+    "high": 1.69,
+    "low": 1.61,
+    "close": 1.66
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1752192000000,
+    "open": 1.66,
+    "high": 1.88,
+    "low": 1.65,
+    "close": 1.87
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1752537600000,
+    "open": 1.88,
+    "high": 2.24,
+    "low": 1.86,
+    "close": 2.2
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1752883200000,
+    "open": 2.2,
+    "high": 2.71,
+    "low": 2.1,
+    "close": 2.55
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1753228800000,
+    "open": 2.55,
+    "high": 2.7,
+    "low": 2.51,
+    "close": 2.63
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1753574400000,
+    "open": 2.62,
+    "high": 2.62,
+    "low": 2.21,
+    "close": 2.36
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1753920000000,
+    "open": 2.36,
+    "high": 2.47,
+    "low": 2.28,
+    "close": 2.34
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1754265600000,
+    "open": 2.34,
+    "high": 2.4,
+    "low": 2.07,
+    "close": 2.22
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1754611200000,
+    "open": 2.22,
+    "high": 2.46,
+    "low": 2.19,
+    "close": 2.46
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1754956800000,
+    "open": 2.47,
+    "high": 2.51,
+    "low": 2.33,
+    "close": 2.34
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1755302400000,
+    "open": 2.33,
+    "high": 2.46,
+    "low": 2.22,
+    "close": 2.27
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1755648000000,
+    "open": 2.27,
+    "high": 2.32,
+    "low": 2.12,
+    "close": 2.12
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1755993600000,
+    "open": 2.12,
+    "high": 2.29,
+    "low": 2.08,
+    "close": 2.25
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1756339200000,
+    "open": 2.25,
+    "high": 2.32,
+    "low": 2.11,
+    "close": 2.2
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1756684800000,
+    "open": 2.2,
+    "high": 2.24,
+    "low": 2.06,
+    "close": 2.06
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1757030400000,
+    "open": 2.06,
+    "high": 2.15,
+    "low": 2.0,
+    "close": 2.08
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1757376000000,
+    "open": 2.08,
+    "high": 2.21,
+    "low": 2.07,
+    "close": 2.19
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1757721600000,
+    "open": 2.2,
+    "high": 2.31,
+    "low": 2.16,
+    "close": 2.29
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1758067200000,
+    "open": 2.29,
+    "high": 2.35,
+    "low": 2.18,
+    "close": 2.23
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1758412800000,
+    "open": 2.23,
+    "high": 2.31,
+    "low": 2.19,
+    "close": 2.21
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1758758400000,
+    "open": 2.21,
+    "high": 2.24,
+    "low": 2.07,
+    "close": 2.18
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1759104000000,
+    "open": 2.18,
+    "high": 2.19,
+    "low": 2.02,
+    "close": 2.14
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1759449600000,
+    "open": 2.14,
+    "high": 2.3,
+    "low": 2.1,
+    "close": 2.26
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1759795200000,
+    "open": 2.26,
+    "high": 2.3,
+    "low": 2.18,
+    "close": 2.22
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1760140800000,
+    "open": 2.22,
+    "high": 2.23,
+    "low": 1.43,
+    "close": 1.79
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1760486400000,
+    "open": 1.77,
+    "high": 1.98,
+    "low": 1.74,
+    "close": 1.88
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1760832000000,
+    "open": 1.88,
+    "high": 1.9,
+    "low": 1.64,
+    "close": 1.76
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1761177600000,
+    "open": 1.76,
+    "high": 1.89,
+    "low": 1.74,
+    "close": 1.77
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1761523200000,
+    "open": 1.77,
+    "high": 2.0,
+    "low": 1.77,
+    "close": 1.99
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1761868800000,
+    "open": 1.99,
+    "high": 2.02,
+    "low": 1.82,
+    "close": 1.85
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1762214400000,
+    "open": 1.85,
+    "high": 1.94,
+    "low": 1.73,
+    "close": 1.76
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1762560000000,
+    "open": 1.76,
+    "high": 1.82,
+    "low": 1.6,
+    "close": 1.76
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1762905600000,
+    "open": 1.76,
+    "high": 1.95,
+    "low": 1.71,
+    "close": 1.82
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1763251200000,
+    "open": 1.82,
+    "high": 1.92,
+    "low": 1.69,
+    "close": 1.7
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1763596800000,
+    "open": 1.69,
+    "high": 1.73,
+    "low": 1.55,
+    "close": 1.61
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1763942400000,
+    "open": 1.61,
+    "high": 1.64,
+    "low": 1.41,
+    "close": 1.56
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1764288000000,
+    "open": 1.56,
+    "high": 1.74,
+    "low": 1.55,
+    "close": 1.66
+  },
+  {
+    "coin_id": "ripple",
+    "coin_name": "XRP",
+    "currency": "gbp",
+    "timestamp_ms": 1764633600000,
+    "open": 1.66,
+    "high": 1.71,
+    "low": 1.5,
+    "close": 1.54
+  }
+]
