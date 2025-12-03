@@ -84,22 +84,59 @@ def extract_current_prices(coins: list[dict], currencies: list[str]) -> dict:
     try:
         data = response.json()
     except ValueError:
-        logger.error("Failed to decode JSON from API.")
+        logger.error("Failed to decode JSON from API")
         logger.warning("Loading backup file instead...")
         if BACKUP_FILE.exists():
             with open(BACKUP_FILE) as f:
                 return json.load(f)
         return {}
 
-    if not isinstance(data, dict):
-        logger.error(f"Unexpected response type: {type(data)}")
-        logger.warning("Loading backup file instead...")
+    # Checks for dict returned and non empty
+    if not isinstance(data, dict) or not data:
+        logger.error("API returned invalid or empty data — keeping backup")
         if BACKUP_FILE.exists():
             with open(BACKUP_FILE) as f:
                 return json.load(f)
         return {}
 
-    # Save fresh backup
+    # Data for every coin is returned
+    for coin in coins:
+        cid = coin["id"]
+        if cid not in data:
+            logger.error(f"Missing coin '{cid}' — backup preserved")
+            if BACKUP_FILE.exists():
+                with open(BACKUP_FILE) as f:
+                    return json.load(f)
+            return {}
+
+    # Every currency is returned for each coin
+    for coin in coins:
+        cid = coin["id"]
+        for cur in currencies:
+            if cur not in data[cid]:
+                logger.error(
+                    f"Missing currency '{cur}' for coin '{cid}' — backup"
+                )
+                if BACKUP_FILE.exists():
+                    with open(BACKUP_FILE) as f:
+                        return json.load(f)
+                return {}
+
+    # All values are numeric
+    for coin in coins:
+        cid = coin["id"]
+        for cur in currencies:
+            val = data[cid][cur]
+            if not isinstance(val, (int, float)):
+                logger.error(
+                    f"Non-numeric value found {cid}/{cur}: {val} — backup"
+                )
+                if BACKUP_FILE.exists():
+                    with open(BACKUP_FILE) as f:
+                        return json.load(f)
+                return {}
+
+    # Save backup if valid data is returned from the api
     with open(BACKUP_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
