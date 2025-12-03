@@ -43,7 +43,7 @@ def extract_historical_ohlc(
             coin_name = coin["name"]
 
             # Random delay to avoid rate limiting
-            time.sleep(random.uniform(6.0, 12.0))
+            time.sleep(random.uniform(8.0, 16.0))
 
             url = HISTORICAL_API.format(
                 coin=coin_id, currency=currency, days=days
