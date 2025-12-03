@@ -3,7 +3,7 @@ import pandas as pd
 
 def transform_historical_prices(raw_records: list[dict]):
     """
-    Clean and enrich historical OHLC crypto price data.
+    Clean and enrich historical OHLC crypto price data
 
     Returns:
         {
