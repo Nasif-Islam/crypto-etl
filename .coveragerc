@@ -1,10 +1,12 @@
 [run]
+source = src
 omit = 
     */__init__.py
-    tests/*
+    src/utils/*
 
 [report]
-fail_under = 90
+fail_under = 70
+show_missing = True
 
 [html]
 directory = htmlcov

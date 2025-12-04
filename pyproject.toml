@@ -5,10 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "crypto-etl"
 version = "0.1.0"
-description = "An ETL pipeline for extracting, transforming, and loading cryptocurrency price data"
-authors = [
-    { name = "Nasif Islam" }
-]
+description = "An ETL pipeline for extracting, transforming and loading cryptocurrency price data"
+authors = [{ name = "Nasif Islam"}]
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
