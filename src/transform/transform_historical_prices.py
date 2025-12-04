@@ -1,6 +1,11 @@
 import pandas as pd
+from src.utils.logger import get_logger
+from src.utils.timer import timer
+
+logger = get_logger(__name__)
 
 
+@timer("Transform Historical Crypto Prices")
 def transform_historical_prices(raw_records: list[dict]):
     """
     Clean and enrich historical OHLC crypto price data
@@ -12,18 +17,20 @@ def transform_historical_prices(raw_records: list[dict]):
         }
     """
 
+    logger.info("Starting transformation of historical OHLC data...")
+
     if not raw_records:
+        logger.warning("No historical records received; returning empty DataFrames")
         return {"clean": pd.DataFrame(), "stats": pd.DataFrame()}
 
     ohlc_df = pd.DataFrame(raw_records)
+    logger.info(f"Initial DataFrame created with {len(ohlc_df)} rows")
 
     # Convert timestamp from ms to datetime
     ohlc_df["timestamp"] = pd.to_datetime(ohlc_df["timestamp_ms"], unit="ms")
-
     # Sort chronologically
-    ohlc_df = ohlc_df.sort_values(["coin_id", "timestamp"]).reset_index(
-        drop=True
-    )
+    ohlc_df = ohlc_df.sort_values(["coin_id", "timestamp"]).reset_index(drop=True)
+    logger.info("Timestamps converted and sorted")
 
     # Remove duplicates & ensure valid OHLC rows
     ohlc_df = ohlc_df.drop_duplicates(subset=["coin_id", "timestamp"])
@@ -31,9 +38,7 @@ def transform_historical_prices(raw_records: list[dict]):
 
     # Enforce numeric types for OHLC values
     ohlc_columns = ["open", "high", "low", "close"]
-    ohlc_df[ohlc_columns] = ohlc_df[ohlc_columns].apply(
-        pd.to_numeric, errors="coerce"
-    )
+    ohlc_df[ohlc_columns] = ohlc_df[ohlc_columns].apply(pd.to_numeric, errors="coerce")
     ohlc_df = ohlc_df.dropna(subset=ohlc_columns)
 
     ohlc_df["pct_change"] = ohlc_df.groupby("coin_id")["close"].pct_change()
@@ -46,9 +51,9 @@ def transform_historical_prices(raw_records: list[dict]):
     )
 
     # Normalized close price (for coin comparisons)
-    ohlc_df["normalized_close"] = ohlc_df.groupby("coin_id")[
-        "close"
-    ].transform(lambda x: x / x.iloc[0] if x.iloc[0] != 0 else x)
+    ohlc_df["normalized_close"] = ohlc_df.groupby("coin_id")["close"].transform(
+        lambda x: x / x.iloc[0] if x.iloc[0] != 0 else x
+    )
 
     stats_table = (
         ohlc_df.groupby("coin_id")
@@ -64,6 +69,8 @@ def transform_historical_prices(raw_records: list[dict]):
         )
         .reset_index()
     )
+
+    logger.info("Historical transformation complete")
 
     return {
         "clean": ohlc_df,

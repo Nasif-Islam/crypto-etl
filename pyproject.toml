@@ -20,7 +20,7 @@ dynamic = ["dependencies"]
 Homepage = "https://github.com/Nasif-Islam/crypto-etl"
 
 [project.scripts]
-run_etl = "scripts.run_etl_pipeline:main"
+run_etl = "scripts.run_etl:main"
 run_tests = "scripts.run_tests:main"
 run_streamlit = "scripts.run_streamlit:main"
 

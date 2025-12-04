@@ -6,9 +6,7 @@ from src.transform.transform_current_prices import transform_current_prices
 from src.load.load_current_prices import load_current_prices
 
 from src.extraction.extract_historical_prices import extract_historical_ohlc
-from src.transform.transform_historical_prices import (
-    transform_historical_prices,
-)
+from src.transform.transform_historical_prices import transform_historical_prices
 from src.load.load_historical_prices import load_historical_prices
 
 from src.utils.config import COINS, CURRENCIES, DEFAULT_CURRENCY, DEFAULT_DAYS
@@ -23,7 +21,7 @@ def run_current_etl():
 
     raw_current = extract_current_prices(COINS, CURRENCIES)
 
-    df_current = transform_current_prices(raw_current)
+    df_current = transform_current_prices(raw_current, COINS, CURRENCIES)
 
     output_path = load_current_prices(df_current)
 
@@ -34,9 +32,7 @@ def run_current_etl():
 def run_historical_etl():
     logger.info("===== Running Historical Price ETL =====")
 
-    raw_historical = extract_historical_ohlc(
-        COINS, DEFAULT_CURRENCY, DEFAULT_DAYS
-    )
+    raw_historical = extract_historical_ohlc(COINS, DEFAULT_CURRENCY, DEFAULT_DAYS)
 
     transformed = transform_historical_prices(raw_historical)
 
