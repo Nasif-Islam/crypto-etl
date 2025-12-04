@@ -21,7 +21,8 @@ Homepage = "https://github.com/Nasif-Islam/crypto-etl"
 
 [project.scripts]
 run_etl = "scripts.run_etl_pipeline:main"
-run_tests = "tests.cli_test_runner:main"
+run_tests = "scripts.run_tests:main"
+run_streamlit = "scripts.run_streamlit:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
