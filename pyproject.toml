@@ -24,9 +24,9 @@ run_etl = "scripts.run_etl_pipeline:main"
 run_tests = "scripts.run_tests:main"
 run_streamlit = "scripts.run_streamlit:main"
 
-[tool.setuptools.packages.find]
-where = ["src", "scripts"]
-include = ["*"]
+[tool.setuptools]
+packages = ["scripts", "extraction", "load", "transform", "utils"]
+package-dir = { "" = "src", "scripts" = "scripts" }
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
