@@ -13,8 +13,8 @@ BACKUP_FILE = RAW_DIR / "backup_current_prices.json"
 @timer("Current Crypto Price Extraction")
 def extract_current_prices(coins: list[dict], currencies: list[str]) -> dict:
     """
-    Extract crypto prices from CoinGecko.
-    If API request fails, fallback to loading backup JSON.
+    Extract crypto prices from CoinGecko
+    If API request fails, fallback to loading backup JSON
     """
 
     coin_ids = ",".join([coin["id"] for coin in coins])
@@ -114,9 +114,7 @@ def extract_current_prices(coins: list[dict], currencies: list[str]) -> dict:
         cid = coin["id"]
         for cur in currencies:
             if cur not in data[cid]:
-                logger.error(
-                    f"Missing currency '{cur}' for coin '{cid}' — backup"
-                )
+                logger.error(f"Missing currency '{cur}' for coin '{cid}' — backup")
                 if BACKUP_FILE.exists():
                     with open(BACKUP_FILE) as f:
                         return json.load(f)
@@ -128,9 +126,7 @@ def extract_current_prices(coins: list[dict], currencies: list[str]) -> dict:
         for cur in currencies:
             val = data[cid][cur]
             if not isinstance(val, (int, float)):
-                logger.error(
-                    f"Non-numeric value found {cid}/{cur}: {val} — backup"
-                )
+                logger.error(f"Non-numeric value found {cid}/{cur}: {val} — backup")
                 if BACKUP_FILE.exists():
                     with open(BACKUP_FILE) as f:
                         return json.load(f)

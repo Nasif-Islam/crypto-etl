@@ -23,16 +23,14 @@ def extract_historical_ohlc(
     days: int = DEFAULT_DAYS,
 ) -> list[dict]:
     """
-    Extract historical OHLC data for a list of coins (single currency).
+    Extract historical OHLC data for a list of coins (single currency)
     - Rate-limit protected with random sleep
     - Marks coins as failed if *anything* goes wrong
     - Only overwrites backup if ALL coins succeed
     - Falls back to backup if extraction is incomplete
     """
 
-    logger.info(
-        f"Extracting OHLC for {len(coins)} coins in {currency}, days={days}"
-    )
+    logger.info(f"Extracting OHLC for {len(coins)} coins in {currency}, days={days}")
 
     all_records = []
     failed_coins = []
@@ -45,9 +43,7 @@ def extract_historical_ohlc(
             # Random delay to avoid rate limiting
             time.sleep(random.uniform(8.0, 16.0))
 
-            url = HISTORICAL_API.format(
-                coin=coin_id, currency=currency, days=days
-            )
+            url = HISTORICAL_API.format(coin=coin_id, currency=currency, days=days)
 
             logger.info(f"Fetching OHLC for {coin_id}/{currency}")
 
@@ -67,16 +63,13 @@ def extract_historical_ohlc(
                 continue
 
             if not isinstance(ohlc_data, list):
-                logger.error(
-                    f"Unexpected OHLC format for {coin_id}: {ohlc_data}"
-                )
+                logger.error(f"Unexpected OHLC format for {coin_id}: {ohlc_data}")
                 failed_coins.append(coin_id)
                 continue
 
             if len(ohlc_data) < 10:
                 logger.warning(
-                    f"Insufficient OHLC rows for {coin_id} ({len(ohlc_data)} "
-                    f"rows)"
+                    f"Insufficient OHLC rows for {coin_id} ({len(ohlc_data)} " f"rows)"
                 )
                 failed_coins.append(coin_id)
                 continue
@@ -102,20 +95,14 @@ def extract_historical_ohlc(
                 )
 
         if failed_coins:
-            logger.error(
-                f"Extraction incomplete — failed coins: {failed_coins}"
-            )
+            logger.error(f"Extraction incomplete — failed coins: {failed_coins}")
 
             if BACKUP_FILE.exists():
-                logger.warning(
-                    "Loading previous backup instead of partial data"
-                )
+                logger.warning("Loading previous backup instead of partial data")
                 with open(BACKUP_FILE) as f:
                     return json.load(f)
 
-            logger.error(
-                "No backup exists — returning EMPTY LIST (safe fallback)"
-            )
+            logger.error("No backup exists — returning EMPTY LIST (safe fallback)")
             return []
 
         with open(BACKUP_FILE, "w") as f:

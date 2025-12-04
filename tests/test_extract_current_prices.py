@@ -1,5 +1,5 @@
 import pytest  # noqa: F401
-import json  # noqa: F401
+import json
 from unittest.mock import patch, MagicMock, mock_open
 from src.extraction.extract_current_prices import extract_current_prices
 from src.utils.config import COINS
@@ -44,9 +44,7 @@ def test_expected_coins_present(mock_get, mock_exists, mock_file):
 @patch("requests.get")
 def test_currencies_present(mock_get, mock_exists, mock_file):
     mock_resp = MagicMock()
-    mock_resp.json.return_value = {
-        "bitcoin": {"gbp": 100, "usd": 110, "eur": 105}
-    }
+    mock_resp.json.return_value = {"bitcoin": {"gbp": 100, "usd": 110, "eur": 105}}
     mock_resp.raise_for_status.return_value = None
     mock_get.return_value = mock_resp
 
@@ -62,9 +60,7 @@ def test_currencies_present(mock_get, mock_exists, mock_file):
 @patch("requests.get")
 def test_values_are_numeric(mock_get, mock_exists, mock_file):
     mock_resp = MagicMock()
-    mock_resp.json.return_value = {
-        "bitcoin": {"gbp": 100, "usd": 110, "eur": 105}
-    }
+    mock_resp.json.return_value = {"bitcoin": {"gbp": 100, "usd": 110, "eur": 105}}
     mock_resp.raise_for_status.return_value = None
     mock_get.return_value = mock_resp
 
@@ -81,9 +77,7 @@ def test_api_mock(mock_get, mock_exists, mock_file):
     mock_resp = MagicMock()
     mock_resp.status_code = 200
     mock_resp.raise_for_status.return_value = None
-    mock_resp.json.return_value = {
-        "bitcoin": {"gbp": 100, "usd": 120, "eur": 110}
-    }
+    mock_resp.json.return_value = {"bitcoin": {"gbp": 100, "usd": 120, "eur": 110}}
     mock_get.return_value = mock_resp
 
     data = extract_current_prices([{"id": "bitcoin"}], ["gbp", "usd", "eur"])
@@ -108,9 +102,7 @@ def test_json_decode_error_uses_backup(mock_get):
     fake_path.stat.return_value = fake_stat
 
     with patch("src.extraction.extract_current_prices.BACKUP_FILE", fake_path):
-        with patch(
-            "builtins.open", mock_open(read_data=json.dumps(fake_backup))
-        ):
+        with patch("builtins.open", mock_open(read_data=json.dumps(fake_backup))):
             data = extract_current_prices([{"id": "bitcoin"}], ["gbp"])
 
     assert data == fake_backup

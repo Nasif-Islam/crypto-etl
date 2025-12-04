@@ -3,6 +3,10 @@ import subprocess
 
 def main():
     """
-    Simple CLI entry point to run pytest with -v
+    Runs the test suite using Coverage + Pytest
+    Generates a terminal report and an HTML report
     """
-    subprocess.run(["pytest", "-v"], check=False)
+    subprocess.run(["coverage", "erase"], check=False)
+    subprocess.run(["coverage", "run", "-m", "pytest", "-v"], check=False)
+    subprocess.run(["coverage", "report", "-m"], check=False)
+    subprocess.run(["coverage", "html"], check=False)
