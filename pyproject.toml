@@ -25,7 +25,7 @@ run_tests = "scripts.run_tests:main"
 run_streamlit = "scripts.run_streamlit:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src", "scripts"]
 include = ["*"]
 
 [tool.setuptools.dynamic]
