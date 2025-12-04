@@ -17,6 +17,7 @@ venv.bak/
 .coverage
 .coverage.*
 pytestdebug.log
+htmlcov/
 
 # Logs
 logs/
