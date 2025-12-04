@@ -4,27 +4,24 @@ import sys
 from pathlib import Path
 import plotly.graph_objects as go
 
-# -------------------------------------------------------------
-# IMPORT PROJECT CONFIG
-# -------------------------------------------------------------
 ROOT_DIR = Path(__file__).resolve().parents[2]
 sys.path.append(str(ROOT_DIR))
 
-from src.utils.config import COINS  # noqa: E402
+from src.utils.config import (  # noqa: E402
+    COINS,
+    DEFAULT_CURRENCY,
+    DEFAULT_DAYS,
+)
 
 st.set_page_config(page_title="Historical Analysis", layout="wide")
 
-# -------------------------------------------------------------
-# LOAD HISTORICAL DATA
-# -------------------------------------------------------------
+# Load historical data
 DATA_DIR = ROOT_DIR / "data" / "cleaned"
 df_historical = pd.read_csv(DATA_DIR / "historical_crypto_prices.csv")
 
 df_historical["timestamp"] = pd.to_datetime(df_historical["timestamp"])
 
-# -------------------------------------------------------------
-# SYMBOL & NAME MAPPING FROM CONFIG
-# -------------------------------------------------------------
+# Symbol & name mapping for formatting coins
 SYMBOL_MAP = {c["name"]: c["symbol"] for c in COINS}
 DISPLAY_NAME_MAP = {c["name"]: f"{c['name']} ({c['symbol']})" for c in COINS}
 
@@ -33,9 +30,7 @@ df_historical["display_name"] = df_historical["coin_name"].map(
     DISPLAY_NAME_MAP
 )
 
-# -------------------------------------------------------------
-# PAGE TITLE + INTRO
-# -------------------------------------------------------------
+# Title & Description
 st.markdown(
     """
     <h1 style='text-align: center; margin-bottom: 0;'>
@@ -45,28 +40,73 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+currency_display = DEFAULT_CURRENCY.upper()
+
 st.markdown(
-    """
-    <div style='text-align: center; font-size: 17px; margin-top: 10px;'>
-        Explore long-term price movements, volatility patterns, and market trends.<br>
-        View candlestick charts, closing prices, and rolling averages for each cryptocurrency.
+    f"""
+    <div style='text-align: center; font-size: 18px; margin-top: 15px;'>
+
+    • Analyse long-term price movements using <b>OHLC</b> data from the CoinGecko API<br>
+    • View interactive <b>candlestick charts</b> and <b>closing-price trends</b><br>
+    • Explore <b>rolling averages</b> to understand short-term vs. long-term behaviour<br>
+    • Select the coin & data range using the sidebar filter on the left<br>
+    • Filters apply to all charts and views on this page<br><br>
+
+    Time span: <b>Last {DEFAULT_DAYS} days</b><br>
+    Default currency: <b>{currency_display}</b><br><br>
+
+    <i>Note: Historical prices are returned in fixed time intervals by the API and may not represent exact daily values.</i>
+
     </div>
     """,
     unsafe_allow_html=True,
 )
 
-# Optional coverage timestamp
-latest = df_historical["timestamp"].max().strftime("%Y-%m-%d")
-st.markdown(
-    f"<p style='text-align:center; color:#AAAAAA;'>Data available up to: <b>{latest}</b></p>",
-    unsafe_allow_html=True,
-)
+# Data coverage badge
+try:
+    ts = pd.to_datetime(df_historical["timestamp"].max())
+
+    st.markdown(
+        f"""
+    <div style="display: flex; justify-content: center; margin-top: 10px;">
+        <span style="
+            background-color: #1e1e1e;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #cccccc;
+            border: 1px solid #444;
+        ">
+            ⏱ Data available up to: <b>{ts.strftime('%Y-%m-%d %H:%M:%S UTC')}</b>
+        </span>
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
+
+except Exception:
+    st.markdown(
+        """
+    <div style="display: flex; justify-content: center; margin-top: 10px;">
+        <span style="
+            background-color: #1e1e1e;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #cccccc;
+            border: 1px solid #444;
+        ">
+            ⏱ Data available up to: <b>Unknown</b>
+        </span>
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
 
 st.markdown("---")
 
-# -------------------------------------------------------------
-# SIDEBAR FILTERS: COIN + DATE RANGE
-# -------------------------------------------------------------
+
+# Sidebar filters - coins & date range (calendar)
 coin_options = sorted(df_historical["display_name"].unique())
 selected_display_name = st.sidebar.selectbox(
     "Select cryptocurrency:", coin_options
@@ -95,21 +135,15 @@ if isinstance(date_range, tuple) and len(date_range) == 2:
         & (df_coin["timestamp"] <= pd.to_datetime(end))
     ]
 
-# -------------------------------------------------------------
-# SECTION TITLE
-# -------------------------------------------------------------
+# Section Title
 st.subheader(f"Historical Data — {selected_display_name}")
 
-# -------------------------------------------------------------
-# TABS FOR DIFFERENT CHARTS
-# -------------------------------------------------------------
+# Tabs
 tab1, tab2, tab3 = st.tabs(
     ["Candlestick Chart", "Closing Price", "Rolling Averages"]
 )
 
-# -------------------------------------------------------------
-# TAB 1 — CANDLESTICK
-# -------------------------------------------------------------
+# TAB 1 — Candlestick
 with tab1:
     st.markdown("### Candlestick Price Chart")
 
@@ -136,11 +170,9 @@ with tab1:
 
     st.plotly_chart(fig_candle, use_container_width=True)
 
-# -------------------------------------------------------------
-# TAB 2 — DAILY CLOSE PRICE
-# -------------------------------------------------------------
+# Closing price tab
 with tab2:
-    st.markdown("### Daily Closing Price")
+    st.markdown("### Closing Price Trend")
 
     fig_close = go.Figure()
 
@@ -163,11 +195,9 @@ with tab2:
 
     st.plotly_chart(fig_close, use_container_width=True)
 
-# -------------------------------------------------------------
-# TAB 3 — ROLLING AVERAGES
-# -------------------------------------------------------------
+# Rolling averages tab
 with tab3:
-    st.markdown("### Rolling Averages (7-day & 30-day)")
+    st.markdown("### Moving Averages (MA7 & MA30)")
 
     fig_roll = go.Figure()
 

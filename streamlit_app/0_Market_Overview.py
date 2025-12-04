@@ -11,22 +11,18 @@ from src.utils.config import CURRENCIES, DEFAULT_CURRENCY, COINS  # noqa: E402
 
 st.set_page_config(page_title="Cryptocurrency Dashboard", layout="wide")
 
-# --------------------------------------------------------------------
-# LOAD DATA
-# --------------------------------------------------------------------
+# Load data
 DATA_DIR = ROOT_DIR / "data" / "cleaned"
 df_current = pd.read_csv(DATA_DIR / "current_crypto_prices.csv")
 
-# dynamic symbol + display name mapping from config
+# Dynamic symbol + display name mapping from config
 SYMBOL_MAP = {c["name"]: c["symbol"] for c in COINS}
 DISPLAY_NAME_MAP = {c["name"]: f"{c['name']} ({c['symbol']})" for c in COINS}
 
 df_current["symbol"] = df_current["coin_name"].map(SYMBOL_MAP)
 df_current["display_name"] = df_current["coin_name"].map(DISPLAY_NAME_MAP)
 
-# --------------------------------------------------------------------
-# SIDEBAR CURRENCY SELECTOR
-# --------------------------------------------------------------------
+# Sidebar currency selector
 currency_options = [c.upper() for c in CURRENCIES]
 
 currency = st.sidebar.radio(
@@ -39,9 +35,7 @@ currency_lower = currency.lower()
 
 df_filtered = df_current[df_current["currency"] == currency_lower].copy()
 
-# --------------------------------------------------------------------
-# DYNAMIC COLOUR PALETTE
-# --------------------------------------------------------------------
+# Dynamic color palette for graphs
 COLOR_SEQUENCE = [
     "#1f77b4",
     "#ff7f0e",
@@ -63,9 +57,7 @@ color_map = {
 
 df_filtered["color"] = df_filtered["symbol"].map(color_map)
 
-# --------------------------------------------------------------------
-# PAGE HEADER
-# --------------------------------------------------------------------
+# Page header
 st.markdown(
     """
     <h1 style='text-align: center; margin-bottom: 0;'>
@@ -88,12 +80,12 @@ st.markdown(
     """
     <div style='text-align: center; font-size: 18px; margin-top: 15px;'>
 
-    • Live cryptocurrency prices updated directly from the CoinGecko API<br>
+    • Live cryptocurrency prices updated directly from the <b>CoinGecko API<b><br>
     • <b>Market capitalization</b> — total value of each cryptocurrency<br>
     • <b>24h price change (%)</b> — percentage movement over the past day<br>
     • <b>24h trading volume</b> — total value traded in the last 24 hours<br><br>
 
-    Use the <b>currency selector</b> in the left sidebar to view prices in GBP, USD, or EUR.
+    Use the <b>currency selector</b> in the left sidebar to view prices in various currencies
     </div>
     """,
     unsafe_allow_html=True,
@@ -143,9 +135,7 @@ except Exception:
 st.markdown("---")
 
 
-# --------------------------------------------------------------------
-# PREP DISPLAY DATA
-# --------------------------------------------------------------------
+# Format data for display
 def fmt(num):
     if abs(num) >= 1_000_000_000:
         return f"{num/1_000_000_000:.2f}B"
@@ -162,16 +152,12 @@ df_display["change_24h_fmt"] = df_display["change_24h"].map(
     lambda x: f"{x:.2f}%"
 )
 
-# --------------------------------------------------------------------
-# TABS
-# --------------------------------------------------------------------
+# Tabs
 tab_overview, tab_prices, tab_market_cap, tab_volume = st.tabs(
     ["Overview", "Prices", "Market Cap", "Volume"]
 )
 
-# ==============================
-# OVERVIEW TAB
-# ==============================
+# Overview tab
 with tab_overview:
     st.subheader(f"Market Snapshot ({currency})")
 
@@ -213,9 +199,7 @@ with tab_overview:
 
     st.dataframe(table_df, use_container_width=True)
 
-# ==============================
-# PRICES TAB
-# ==============================
+# Prices tabs
 with tab_prices:
     st.subheader(f"Price Comparison ({currency})")
 
@@ -274,9 +258,7 @@ with tab_prices:
 
     st.plotly_chart(fig_change, use_container_width=True)
 
-# ==============================
-# MARKET CAP TAB
-# ==============================
+# Market cap tab
 with tab_market_cap:
     st.subheader("Market Capitalization")
 
@@ -308,9 +290,7 @@ with tab_market_cap:
 
     st.plotly_chart(fig_market, use_container_width=True)
 
-# ==============================
-# VOLUME TAB
-# ==============================
+# Volume tab
 with tab_volume:
     st.subheader("24-Hour Trading Volume")
 
