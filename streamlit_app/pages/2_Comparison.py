@@ -202,7 +202,7 @@ with tab_price:
         legend_title="Cryptocurrency",
     )
 
-    st.plotly_chart(fig_price, use_container_width=True)
+    st.plotly_chart(fig_price, width="stretch")
 
 # Normalized Performance tab
 with tab_norm:
@@ -239,7 +239,7 @@ with tab_norm:
         legend_title="Cryptocurrency",
     )
 
-    st.plotly_chart(fig_norm, use_container_width=True)
+    st.plotly_chart(fig_norm, width="stretch")
 
 # Volatility Comparison tab
 with tab_vol:
@@ -276,4 +276,4 @@ with tab_vol:
         legend_title="Cryptocurrency",
     )
 
-    st.plotly_chart(fig_vol, use_container_width=True)
+    st.plotly_chart(fig_vol, width="stretch")

@@ -183,4 +183,4 @@ fig_rr.update_layout(
     showlegend=False,
 )
 
-st.plotly_chart(fig_rr, use_container_width=True)
+st.plotly_chart(fig_rr, width="stretch")

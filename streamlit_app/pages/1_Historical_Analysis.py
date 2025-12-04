@@ -133,7 +133,7 @@ if isinstance(date_range, tuple) and len(date_range) == 2:
 st.subheader(f"Historical Data — {selected_display_name}")
 
 # Tabs
-tab1, tab2, tab3 = st.tabs(["Candlestick Chart", "Closing Price", "Rolling Averages"])
+tab1, tab2, tab3 = st.tabs(["Candlestick Chart", "Closing Price", "Moving Averages"])
 
 # TAB 1 — Candlestick
 with tab1:
@@ -160,7 +160,7 @@ with tab1:
         yaxis_title="Price (GBP)",
     )
 
-    st.plotly_chart(fig_candle, use_container_width=True)
+    st.plotly_chart(fig_candle, width="stretch")
 
 # Closing price tab
 with tab2:
@@ -185,7 +185,7 @@ with tab2:
         yaxis_title="Close Price (GBP)",
     )
 
-    st.plotly_chart(fig_close, use_container_width=True)
+    st.plotly_chart(fig_close, width="stretch")
 
 # Rolling averages tab
 with tab3:
@@ -220,4 +220,4 @@ with tab3:
         yaxis_title="Price (GBP)",
     )
 
-    st.plotly_chart(fig_roll, use_container_width=True)
+    st.plotly_chart(fig_roll, width="stretch")

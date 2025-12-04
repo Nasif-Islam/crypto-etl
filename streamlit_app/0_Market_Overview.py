@@ -194,7 +194,7 @@ with tab_overview:
         }
     )
 
-    st.dataframe(table_df, use_container_width=True)
+    st.dataframe(table_df, width="stretch")
 
 # Prices tabs
 with tab_prices:
@@ -227,7 +227,7 @@ with tab_prices:
         showlegend=False,
     )
 
-    st.plotly_chart(fig_price, use_container_width=True)
+    st.plotly_chart(fig_price, width="stretch")
 
     st.markdown("---")
 
@@ -253,7 +253,7 @@ with tab_prices:
         showlegend=False,
     )
 
-    st.plotly_chart(fig_change, use_container_width=True)
+    st.plotly_chart(fig_change, width="stretch")
 
 # Market cap tab
 with tab_market_cap:
@@ -285,7 +285,7 @@ with tab_market_cap:
         showlegend=False,
     )
 
-    st.plotly_chart(fig_market, use_container_width=True)
+    st.plotly_chart(fig_market, width="stretch")
 
 # Volume tab
 with tab_volume:
@@ -317,4 +317,4 @@ with tab_volume:
         showlegend=False,
     )
 
-    st.plotly_chart(fig_vol, use_container_width=True)
+    st.plotly_chart(fig_vol, width="stretch")
