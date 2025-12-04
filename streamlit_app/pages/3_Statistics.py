@@ -109,8 +109,7 @@ COLOR_SEQUENCE = [
 
 symbols = df_stats["symbol"].tolist()
 color_map = {
-    sym: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)]
-    for i, sym in enumerate(symbols)
+    sym: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)] for i, sym in enumerate(symbols)
 }
 df_stats["color"] = df_stats["symbol"].map(color_map)
 

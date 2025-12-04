@@ -26,9 +26,7 @@ SYMBOL_MAP = {c["name"]: c["symbol"] for c in COINS}
 DISPLAY_NAME_MAP = {c["name"]: f"{c['name']} ({c['symbol']})" for c in COINS}
 
 df_historical["symbol"] = df_historical["coin_name"].map(SYMBOL_MAP)
-df_historical["display_name"] = df_historical["coin_name"].map(
-    DISPLAY_NAME_MAP
-)
+df_historical["display_name"] = df_historical["coin_name"].map(DISPLAY_NAME_MAP)
 
 # Title & Description
 st.markdown(
@@ -55,7 +53,7 @@ st.markdown(
     Time span: <b>Last {DEFAULT_DAYS} days</b><br>
     Default currency: <b>{currency_display}</b><br><br>
 
-    <i>Note: Historical prices are returned in fixed time intervals by the API and may not represent exact daily values.</i>
+    <i>Note: Historical prices are returned in fixed time intervals by the API and may not represent exact daily values</i>
 
     </div>
     """,
@@ -108,15 +106,11 @@ st.markdown("---")
 
 # Sidebar filters - coins & date range (calendar)
 coin_options = sorted(df_historical["display_name"].unique())
-selected_display_name = st.sidebar.selectbox(
-    "Select cryptocurrency:", coin_options
-)
+selected_display_name = st.sidebar.selectbox("Select cryptocurrency:", coin_options)
 
 selected_coin_name = selected_display_name.split(" (")[0]
 
-df_coin = df_historical[
-    df_historical["coin_name"] == selected_coin_name
-].copy()
+df_coin = df_historical[df_historical["coin_name"] == selected_coin_name].copy()
 
 min_date = df_coin["timestamp"].min()
 max_date = df_coin["timestamp"].max()
@@ -139,9 +133,7 @@ if isinstance(date_range, tuple) and len(date_range) == 2:
 st.subheader(f"Historical Data — {selected_display_name}")
 
 # Tabs
-tab1, tab2, tab3 = st.tabs(
-    ["Candlestick Chart", "Closing Price", "Rolling Averages"]
-)
+tab1, tab2, tab3 = st.tabs(["Candlestick Chart", "Closing Price", "Rolling Averages"])
 
 # TAB 1 — Candlestick
 with tab1:

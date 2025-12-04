@@ -27,9 +27,7 @@ SYMBOL_MAP = {c["name"]: c["symbol"] for c in COINS}
 DISPLAY_NAME_MAP = {c["name"]: f"{c['name']} ({c['symbol']})" for c in COINS}
 
 df_historical["symbol"] = df_historical["coin_name"].map(SYMBOL_MAP)
-df_historical["display_name"] = df_historical["coin_name"].map(
-    DISPLAY_NAME_MAP
-)
+df_historical["display_name"] = df_historical["coin_name"].map(DISPLAY_NAME_MAP)
 
 # Page header & description
 st.markdown(
@@ -160,8 +158,7 @@ COLOR_SEQUENCE = [
 
 symbols = df_filtered["symbol"].unique().tolist()
 color_map = {
-    sym: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)]
-    for i, sym in enumerate(symbols)
+    sym: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)] for i, sym in enumerate(symbols)
 }
 
 # Map colors back into df
@@ -222,9 +219,7 @@ with tab_norm:
 
         # Normalize based on first close in the filtered date range
         first_close = df_coin["close"].iloc[0]
-        df_coin["norm_return_pct"] = (
-            df_coin["close"] / first_close - 1.0
-        ) * 100.0
+        df_coin["norm_return_pct"] = (df_coin["close"] / first_close - 1.0) * 100.0
 
         fig_norm.add_trace(
             go.Scatter(
@@ -261,9 +256,7 @@ with tab_vol:
 
         # Compute rolling volatility based on percentage change in close
         pct_change = df_coin["close"].pct_change()
-        df_coin["rolling_volatility_pct"] = (
-            pct_change.rolling(window=7).std() * 100.0
-        )
+        df_coin["rolling_volatility_pct"] = pct_change.rolling(window=7).std() * 100.0
 
         fig_vol.add_trace(
             go.Scatter(

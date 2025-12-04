@@ -51,8 +51,7 @@ COLOR_SEQUENCE = [
 
 symbols = df_filtered["symbol"].unique().tolist()
 color_map = {
-    sym: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)]
-    for i, sym in enumerate(symbols)
+    sym: COLOR_SEQUENCE[i % len(COLOR_SEQUENCE)] for i, sym in enumerate(symbols)
 }
 
 df_filtered["color"] = df_filtered["symbol"].map(color_map)
@@ -148,9 +147,7 @@ df_display = df_filtered.copy()
 df_display["price_fmt"] = df_display["price"].apply(fmt)
 df_display["market_cap_fmt"] = df_display["market_cap"].apply(fmt)
 df_display["volume_24h_fmt"] = df_display["volume_24h"].apply(fmt)
-df_display["change_24h_fmt"] = df_display["change_24h"].map(
-    lambda x: f"{x:.2f}%"
-)
+df_display["change_24h_fmt"] = df_display["change_24h"].map(lambda x: f"{x:.2f}%")
 
 # Tabs
 tab_overview, tab_prices, tab_market_cap, tab_volume = st.tabs(
