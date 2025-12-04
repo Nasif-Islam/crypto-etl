@@ -9,10 +9,10 @@ st.markdown(
     ## Overview
     This dashboard provides an interactive view of live and historical cryptocurrency
     data. It includes price tracking, trend analysis, comparisons, and statistical
-    insights — all presented through a clean Streamlit interface.
+    insights — all presented through a clean Streamlit interface
 
     The displayed cryptocurrencies, default currency, and supported currency options
-    are fully configurable via a Python config file.
+    are fully configurable via a Python config file
 
     ---
 
@@ -28,7 +28,7 @@ st.markdown(
 
     ## Data Source
     Market data is retrieved from the **CoinGecko API**, with local caching for
-    performance and reliability.
+    performance and reliability
 
     ---
 
