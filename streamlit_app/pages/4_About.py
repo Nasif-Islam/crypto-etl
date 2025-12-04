@@ -6,44 +6,35 @@ st.title("About This Project")
 
 st.markdown(
     """
-    ## Project Overview
-    This Streamlit dashboard provides real-time and historical insights into major
-    cryptocurrencies using a fully automated ETL pipeline.
+    ## Overview
+    This dashboard provides an interactive view of live and historical cryptocurrency
+    data. It includes price tracking, trend analysis, comparisons, and statistical
+    insights — all presented through a clean Streamlit interface.
 
-    The pipeline:
-    - Extracts pricing data from the **CoinGecko API**
-    - Applies cleaning, transformations, and feature engineering
-    - Stores both current and historical datasets locally
-    - Powers the interactive dashboard pages you see in the sidebar
+    The displayed cryptocurrencies, default currency, and supported currency options
+    are fully configurable via a Python config file.
 
     ---
 
-    ## Data Sources
-    - **CoinGecko API** — live and historical OHLC pricing  
-    - Automatic fallback to cached data if API calls fail  
-    - Historical data stored in GBP for consistency
-
-    ---
-
-    ## Dashboard Features
-    - Live market overview and KPIs  
-    - Price comparisons across multiple currencies  
+    ## Features
+    - Live market data and KPIs  
+    - Multi-currency price views  
     - Historical candlestick charts  
-    - Normalised price trends  
-    - Rolling averages and volatility metrics  
-    - Statistical summaries and insights
+    - Moving averages and volatility trends  
+    - Cross-asset comparison tools  
+    - Summary metrics from full historical datasets  
+
+    ---
+
+    ## Data Source
+    Market data is retrieved from the **CoinGecko API**, with local caching for
+    performance and reliability.
 
     ---
 
     ## Developer
-    **Created by Nasif Islam**  
-    Built using Python, Streamlit, Plotly, and a custom ETL pipeline.
-
-    ---
-
-    ## Update Frequency
-    The ETL pipeline is designed to run on-demand.  
-    Each dataset includes a timestamp indicating the last extraction time.
+    **Nasif Islam**  
+    GitHub: [https://github.com/Nasif-Islam](https://github.com/Nasif-Islam)
 
     ---
 

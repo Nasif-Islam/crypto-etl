@@ -9,4 +9,5 @@ exclude =
     data,
     docs,
     notebooks,
-    tests
+    tests,
+    streamlit_app
