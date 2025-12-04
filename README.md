@@ -11,12 +11,6 @@ Crypto-ETL is a Python pipeline that extracts cryptocurrency data from the CoinG
 - **Plotly** – data visualization  
 - **pytest** – testing framework  
 
-## ETL Pipeline Diagram
-flowchart LR
-    A[Extract<br>(CoinGecko API)] --> B[Transform<br>(Cleaning & Enrichment)]
-    B --> C[Load<br>(CSV Outputs)]
-    C --> D[Streamlit Dashboard<br>(Visualisations)]
-
 ## Features
 - Extracts current and historical cryptocurrency prices
 - Transform data: clean, validate and enrich with moving averages, normalized prices, etc.
