@@ -161,13 +161,12 @@ with tab_overview:
     kpi_cols = st.columns(len(df_display))
 
     for col, (_, row) in zip(kpi_cols, df_display.iterrows()):
-        delta_color = "normal" if row["change_24h"] >= 0 else "inverse"
 
         col.metric(
             label=row["display_name"],
             value=f"{row['price_fmt']} {currency}",
             delta=f"{row['change_24h']:.2f}%",
-            delta_color=delta_color,
+            delta_color="normal",
         )
 
     st.markdown("---")
